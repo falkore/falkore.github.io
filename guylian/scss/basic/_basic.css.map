@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "_basic.css",
+  "sources": [
+    "_basic.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": "AAEA,oCAAoC;;AA6B9B,IAAI,EAAE,IAAI,CAAN;EAAC,KAAK,EAAE,IAAK;EAAE,MAAM,EAAE,IAAK,GAA3B;;;AACX,UAAU,CAAA;EAAC,KAAK,EAAE,IAAK;EAAE,MAAM,EAAE,IAAK,GAA3B;;AACX,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,MAAM;;EACzB,IAAI,CAAA;IAAC,KAAK,EAAE,GAAI;IAAE,MAAM,EAAE,EAAG,GAAxB",
+  "names": []
+}

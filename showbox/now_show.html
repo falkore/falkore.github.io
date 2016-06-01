@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="./img/all/head/favi.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/all/head/favi.jpg" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/now_show.css" />
+    <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <script src="./js/jquery/prefixfree.min.js"></script>
+    <script src="https://use.fontawesome.com/daf4cd64c9.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="./js/now_show.js"></script>
+    <script src="./js/basic.js"></script>
+    <!--[if lte IE 9]>
+     <script src="./js/dist/html5shiv.min.js"></script>
+     <script src="./js/dist/ie9.min.js"></script>
+     <script src="./js/dist/PIE.js"></script>
+    <![endif]-->
+    <title>Showbox website</title>
+    </head>
+  <body>
+   <div id="pop_up">
+        <div class="content_pop">
+            <p>해당 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어 졌습니다. 홈페이지의 일부 내용과 이미지 등은 그 출처가 따로 있음을 밝힙니다. 해당 사이트는 HTML5와 CSS3를 기준으로 하여 IE 10 이상, 크롬 브라우저 등에 최적화된 웹사이트입니다.</p>
+        </div>
+        <button class="close_btn">
+            <i class="fa fa-times" aria-hidden="true">
+               <span>닫기 버튼</span>
+            </i>
+        </button>
+    </div>
+   <div id="wrap">
+     <header id="web_head">
+       <div id="gnb">
+           <ul>
+               <li><a href="#"><span>KOREAN</span></a></li>
+               <li><a href="#"><span>ENGLISH</span></a></li>
+           </ul>
+       </div><!--// #gnb-->
+       <div id="nav">
+           <h1><a href="index.html"><span>쇼박스 로고</span></a></h1>
+           <ul>
+               <li><a href="#"><span>COMPANY</span></a></li>
+               <li class="on"><a href="now_show.html"><span>MOVIE</span></a></li>
+               <li><a href="#"><span>IR</span></a></li>
+               <li><a href="newsboard.html"><span>NEWS</span></a></li>
+           </ul>
+       </div><!--// #nav-->
+       <div class="wrap">
+         <div id="menu_box">
+               <ul>
+                   <li><a href="#"><span>회사소개</span></a></li>
+                   <li><a href="#"><span>회사연혁</span></a></li>
+                   <li><a href="#"><span>CONTACT</span></a></li>
+                   <li><a href="#"><span>배급문의</span></a></li>
+               </ul>
+               <ul>
+                   <li><a href="now_show.html#tab_box01"><span>현재상영작</span></a></li>
+                   <li><a href="now_show.html"><span>상영예정작</span></a></li>
+                   <li><a href="#"><span>LINE UP</span></a></li>
+               </ul>
+               <ul>
+                   <li><a href="#"><span>공시정보</span></a></li>
+                   <li><a href="#"><span>재무정보</span></a></li>
+                   <li><a href="#"><span>IR NEWS</span></a></li>
+               </ul>
+               <ul>
+                   <li><a href="newsboard.html"><span>NEWS</span></a></li>
+                   <li><a href="#"><span>SNS</span></a></li>
+               </ul>
+         </div><!--// #menu_box-->
+         </div><!--// .wrap-->
+         </header><!--// #web_head-->
+          <div id="sub_head">
+             <hgroup>
+                 <h2>SHOWBOX MOVIE</h2>
+                 <h3>쇼박스 영화</h3>
+             </hgroup>
+     </div><!--// #sub_head-->
+     <div id="sub_box">
+             <ul>
+                 <li>HOME</li>
+                 <li>
+                     <i class="fa fa-angle-right" aria-hidden="true"><span>icon</span></i>
+                 </li>
+                 <li>MOVIE</li>
+                 <li>
+                     <i class="fa fa-angle-right" aria-hidden="true"><span>icon</span></i></li>
+                 <li>SHOWBOX MOVIE</li>
+             </ul>
+         </div><!-- //#sub_box-->
+         <section id="movie_box">
+            <div id="movie_tabs">
+                <ul>
+                    <li class="tabs01 on"><a href="#tab_box01">현재상영작</a></li>
+                    <li class="tabs02"><a href="#tab_box02">상영예정작</a></li>
+                </ul>
+            </div><!-- //#movie_tabs-->
+            <div id="tab_box">
+            <div id="tab_box01" class="click box"> 
+            <div id="now_box">
+                <div class="opacity_bar">
+                <ul class="now_show">
+                    <li class="film_title">검사외전</li>
+                    <li class="synop">감옥에서 복수의 칼을 갈던 재욱. 5년 후, 자신이 누명을 쓰게 된 사건에 대해 알고 있는 허세남발 꽃미남 사기꾼 ‘치원’(강동원)을 우연히 만나게 되고, 그 순간 감옥 밖 작전을 대행해 줄 선수임을 직감한다. 검사 노하우를 총 동원, 치원을 무혐의로 내보내고 반격을 준비하는 재욱. 하지만 자유를 얻은 치원은 재욱에게서 벗어날 기회만 호시탐탐 노리는데…
+                    </li>
+                </ul> 
+                </div> 
+            </div>  <!-- //#now_box -->    
+            <div id="now_box2">   
+                <div id="content_box">  
+                    <div id="film_box">
+                        <dl class="film_info">
+                            <dt>
+                                <strong>검사외전</strong>
+                                <p>A Violent Prosecutor</p>
+                            </dt>
+                            <dd>
+                                <ul class="film_info_box">
+                                    <li>
+                                        <p><strong>감독</strong>이일형</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>출연</strong>황정민, 강동원</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>등급</strong>15세 이상 관람가</p>  
+                                    </li>
+                                    <li>
+                                        <p><strong>장르</strong> 범죄, 코미디</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>개봉</strong> 2016&#45;02&#45;03</p>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div> <!-- //#film_box -->
+                    <div id="poster">
+                        <img src="./img/show/poster.jpg" alt="검사외전 이미지">
+                    </div>
+                    <div id="film_gallery">
+                        <span>스틸컷</span>
+                        <div class="gall_btn lft_btn">
+                            <button type="button" id="left">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                <span>왼쪽버튼</span>
+                            </button>
+                        </div>
+                        <div class="gall_btn rgt_btn">
+                            <button type="button" id="right">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span>오른쪽버튼</span>
+                            </button>
+                         </div>
+                            <ul class="film_gall">
+                                <li id="gallery_01">
+                                   <a class="fancybox" rel="group" href="./img/show/cut_01.jpg">
+                                       <img src="./img/show/cut_01.jpg" alt="스틸컷 1" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_02.jpg">
+                                       <img src="./img/show/cut_02.jpg" alt="스틸컷 2" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_03.jpg">
+                                       <img src="./img/show/cut_03.jpg" alt="스틸컷 3" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_04.jpg">
+                                       <img src="./img/show/cut_04.jpg" alt="스틸컷 4" />
+                                   </a>
+                                </li>
+                                <li id="gallery_02">
+                                   <a class="fancybox" rel="group" href="./img/show/cut_05.jpg">
+                                       <img src="./img/show/cut_05.jpg" alt="스틸컷 5" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_06.jpg">
+                                       <img src="./img/show/cut_06.jpg" alt="스틸컷 6" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_07.jpg">
+                                       <img src="./img/show/cut_07.jpg" alt="스틸컷 7" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_08.jpg">
+                                       <img src="./img/show/cut_08.jpg" alt="스틸컷 8" />
+                                   </a>
+                                </li>
+                                <li id="gallery_03">
+                                   <a class="fancybox" rel="group" href="./img/show/cut_09.jpg">
+                                       <img src="./img/show/cut_09.jpg" alt="스틸컷 9" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_10.jpg">
+                                          
+                                       <img src="./img/show/cut_10.jpg" alt="스틸컷 10" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_11.jpg"> 
+                                      <img src="./img/show/cut_11.jpg" alt="스틸컷 11" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_12.jpg">
+                                       <img src="./img/show/cut_12.jpg" alt="스틸컷 12" />
+                                   </a>
+                                </li>
+                                <li id="gallery_04">
+                                   <a class="fancybox" rel="group" href="./img/show/cut_13.jpg">
+                                       <img src="./img/show/cut_13.jpg" alt="스틸컷 13" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_14.jpg">
+                                       <img src="./img/show/cut_14.jpg" alt="스틸컷 14" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_15.jpg">
+                                       <img src="./img/show/cut_15.jpg" alt="스틸컷 15" />
+                                   </a>
+                                   <a class="fancybox" rel="group" href="./img/show/cut_16.jpg">
+                                       <img src="./img/show/cut_16.jpg" alt="스틸컷 16" />
+                                   </a>
+                                </li>
+                            </ul>
+                        </div> <!-- //#film_gallery -->
+                        <div id="film_trailer">
+                            <span>예고편</span>
+                            <iframe title="검사외전 예고편" src="https://www.youtube.com/embed/f9eCW428V3A" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div> <!-- // #content_box -->   
+                </div> <!-- // # now_box2 -->
+             </div>  <!-- // #tab_box01 -->
+            <div id="tab_box02" class="box">
+                <div id="soon_film_box">
+                    <div class="soon_film01 soon_box">
+                        <img src="./img/show/film_01.jpg" alt="굿바이 싱글 포스터">
+                        <dl>
+                            <dt>
+                                <strong>굿바이 싱글</strong>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <p><strong>연출</strong>김태곤</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>출연</strong>김혜수 마동석</p>
+                                        <span>김현수 곽시양</span>
+                                        <span>서현진 전석호</span>
+                                        <span>이미도</span>
+                                    </li>
+                                    <li>
+                                        <p><strong>개봉</strong>2016&#45;06&#45;29</p>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="soon_film02 soon_box">
+                        <img src="./img/show/film_02.jpg" alt="터널">
+                        <dl>
+                            <dt>
+                                <strong>터널</strong>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <p><strong>연출</strong>김성훈</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>출연</strong>하정우 배두나</p>
+                                        <span>오달수</span>
+                                    </li>
+                                    <li>
+                                        <p><strong>개봉</strong>2016&#45;08</p>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="soon_film03 soon_box">
+                        <img src="./img/show/film_00.png" alt="부활">
+                        <dl>
+                            <dt>
+                                <strong>부활</strong>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <p><strong>연출</strong>곽경택</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>출연</strong>김래원 김해숙</p>
+                                        <span>성동일 전혜진</span>
+                                        <span>장영남</span>
+                                    </li>
+                                    <li>
+                                        <p><strong>개봉</strong>2016</p>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="soon_film04 soon_box">
+                        <img src="./img/show/film_04.jpg" alt="가려진 시간">
+                        <dl>
+                            <dt>
+                                <strong>가려진 시간</strong>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <p><strong>연출</strong>엄태화</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>출연</strong>강동원 신은수</p>
+                                        <span>이효제</span>
+                                    </li>
+                                    <li>
+                                        <p><strong>개봉</strong>2016</p>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="soon_film05 soon_box">
+                        <img src="./img/show/film_05.jpg" alt="키오브라이프">
+                        <dl>
+                            <dt>
+                                <strong>키 오브 라이프</strong>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <p><strong>연출</strong>이계벽</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>출연</strong>유해진 이준</p>
+                                        <span>조윤희 임지연</span>
+                                    </li>
+                                    <li>
+                                        <p><strong>개봉</strong>2016</p>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="soon_film06 soon_box">
+                        <img src="./img/show/film_00.png" alt="더 프리즌">
+                        <dl>
+                            <dt>
+                                <strong>더 프리즌</strong>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <p><strong>연출</strong>나현</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>출연</strong>한석규 김래원</p>
+                                        <span>이경영 정우인</span>
+                                        <span>조재윤 김성균</span>
+                                        <span>신성록</span>
+                                    </li>
+                                    <li>
+                                        <p><strong>개봉</strong>2016</p>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div> <!-- //#tab_box02 -->         
+            </div>
+        </section> <!-- // movie_box -->
+        <footer id="web_foot">
+         <div class="wrap">
+          <h2>Footer_logo</h2>
+          <div id="info_box">
+              <address>서울시 강남구 도산대로 310(논현동) 916빌딩 7~9층</address>
+              <p>Email: showmaster@showbox.co.kr<br />
+              Copyright 2016 SHOWBOX. All rights Reserved.</p>
+          </div><!--// #info_box-->
+          <div id="info_menu">
+              <ul>
+                  <li><a href="#"><span>회사소개</span></a></li>
+                  <li><a href="#"><span>이용약관</span></a></li>
+                  <li><a href="#"><span>사이트맵</span></a></li>
+              </ul>
+          </div><!--// #info_menu-->
+          <div id="sns_site">
+              <ul>
+                  <li><a href="#" class="fa fa-facebook-square" aria-hidden="true"><span>Facebook</span></a></li>
+                  <li><a href="#" class="fa fa-twitter-square" aria-hidden="true"><span>Twitter</span></a></li>
+                  <li><a href="#" class="fa fa-instagram" aria-hidden="true"><span>Instagram</span></a></li>
+              </ul>
+              <form action="#" method="get">
+                  <fieldset>
+                      <legend>Showbox's family site</legend>
+                          <label for="family"></label>
+                          <select name="family" id="family" onchange="if(this.value) window.open(this.value);">
+                              <option value="family_site" selected="selected">FAMILY SITE</option>
+                              <option value="http://www.orionworld.com/">ORION</option>
+                              <option value="http://www.sportstoto.co.kr/">SPORTS TOTO</option>
+                          </select>
+                  </fieldset>
+              </form>
+              
+          </div><!--// #sns_site-->
+        </div><!--// .wrap-->
+      </footer><!--// #web_foot-->
+         
+      </div><!-- //#wrap -->
+    </body>
+</html>

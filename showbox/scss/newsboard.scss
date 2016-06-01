@@ -1,0 +1,104 @@
+@import 'basic.scss';
+@import 'head.scss';
+@import 'foot.scss';
+
+
+/* -- body & wrap -------------------------------------*/
+html, body{width: 100%; height: 100%; background-color: #fff;}
+#wrap{width: 100%; height: auto; 
+    #web_head{width: 100%; height: 130px; 
+              background-color: $black;
+              position: relative;
+    }// #web_head
+    #sub_head{width: 100%; height: 80px; 
+              border-top: 10px solid $orange;
+              border-bottom: 10px solid $gray02;
+              background-color: $white;}
+    #sub_box{width: 840px; height: 50px;
+             padding: 0 60px; margin: 0 auto;} 
+    
+    #news_table{width: 960px; height: 900px; margin: 0 auto; padding-top: 30px;
+        table{width: 100%; height: 100%;}
+    }
+    #select_list{width: 360px; height: 40px; margin: 0 auto; padding: 20px 300px;}
+    #web_foot{width: 100%; height: 150px; 
+              background-color: $black;}
+    .wrap{width: 960px; height: 100%; margin: 0 auto;}
+}// #wrap
+
+/* -- sub_head    -------------------------------------*/
+#sub_head{
+    hgroup{width: 890px; height: 50px; padding-left: 70px;
+           padding-top: 30px;
+           margin: 0 auto;  
+        h2{width: auto; height: 50px;
+           line-height: 50px;
+           float: left;
+           @include fontOpt($size: 1.375rem, $bold: bold, $color: $black);}
+        h3{width: auto; height: 50px; 
+           padding-left: 15px; line-height: 50px; 
+           float: left;
+           @include fontOpt($bold: bold, $color: $black);}
+    }//hgroup
+}// #sub_head
+#sub_box{
+    ul{width: 260px; height: 100%; float: left;
+        li{width: calc(auto - 20px); height: 30px;
+            line-height: 30px; padding: 12px 10px 10px;
+            float: left; @include fontOpt($size: 0.875rem, $color: $black);}
+        li:nth-of-type(2){height: 20px; font-size: 1.25em; padding: 15px 0;}
+        li:nth-of-type(4){height: 20px; font-size: 1.25em; padding: 15px 0;}
+        span{@extend %hidden;}
+    }// ul
+    form{width: 350px; height: 100%; float: right;
+        legend, label{@extend %hidden;}
+        select{width: 80px; height: 24px; margin: 11px 5px;
+               float: left; border: 2px solid $gray02;
+               font-size: 0.9em;
+            }// select
+        input{height: 24px; margin: 11px 5px;
+               float: left; border: 2px solid $gray02;
+               font-size: 0.9em;
+            }// input
+        #search_text{width: 180px; height: 20px;}
+        #submit{width: 45px; @include fontOpt($size: 0.9em, $color: $black);
+                text-align: center; padding-right: 5px;line-height: 24px;}
+    }// form
+}// #sub_box 
+
+/* -- table   -----------------------------------------*/
+
+#news_table{ 
+    tr{height: 40px; text-align: center;
+       /*box-sizing: border-box;
+       border-bottom: 0.5px solid $gray03;*/
+        &:nth-of-type(1){
+            background-color: $gray03;
+            &:hover{background-color: $gray03;}
+        }
+        &:hover{background-color: $gray02;}
+    }// tr
+    th{width: 150px; height: 20px; padding: 18px 5px 0; 
+        span{width: 100%; height: 20px; display: block;
+            @include fontOpt($size: 1.1em, $bold: bold, $color: $white);
+            text-align: center; line-height: 20px;
+             
+        }
+        &:nth-of-type(2){width: 500px;}
+    }// th
+    td{width: 150px; padding-top: 20px;
+        &:nth-of-type(2){width: 500px; text-align: left; padding-left: 20px;}
+        
+    }// td
+}
+#select_list{
+    ul{width: 100%; height: 100%;}// ul
+    li{width: 20px; height: 20px; margin: 10px; float: left;
+       text-align: center; line-height: 20px;
+       @include fontOpt($color: $black);
+        span{@extend %hidden;}
+    }// li
+    .num:hover{color: $orange; font-weight: bold;}
+    .angle{padding-top: 2px;}
+    .angle:hover{color: $orange; font-weight: bold;}
+}// #select_list

@@ -1,0 +1,411 @@
+@import 'basic.scss';
+@import 'head.scss';
+@import 'foot.scss';
+
+
+
+html, body{width: 100%; height: auto;}
+#wrap{width: 100%; height: auto; margin: 0 auto;
+    #web_head{width: 100%; height: 130px; 
+              background-color: $black;
+              position: relative;
+    }// #web_head
+    #sub_head{width: 100%; height: 80px; 
+              border-top: 10px solid $orange;
+              border-bottom: 10px solid $gray02;
+              background-color: $white;}
+    #sub_box{width: 840px; height: 50px;
+             padding: 0 60px; margin: 0 auto;} 
+    #movie_box{width:100%; height: auto;}
+    #web_foot{width: 100%; height: 150px; 
+              background-color: $black;}
+    .wrap{width: 960px; height: 100%; margin: 0 auto;}
+    
+}
+ 
+/* -- sub_head    -------------------------------------*/
+#sub_head{
+    hgroup{width: 890px; height: 50px; padding-left: 70px;
+           padding-top: 30px;
+           margin: 0 auto;  
+        h2{width: auto; height: 50px;
+           line-height: 50px;
+           float: left;
+           @include fontOpt($size: 1.375rem, $bold: bold, $color: $black);}
+        h3{width: auto; height: 50px; 
+           padding-left: 15px; line-height: 50px; 
+           float: left;
+           @include fontOpt($bold: bold, $color: $black);}
+    }//hgroup
+}// #sub_head
+#sub_box{
+    ul{width: 260px; height: 100%; float: left;
+        li{width: calc(auto - 20px); height: 30px;
+            line-height: 30px; padding: 12px 10px 10px;
+            float: left; @include fontOpt($size: 0.875rem, $color: $black);}
+        li:nth-of-type(2){height: 20px; font-size: 1.25em; padding: 15px 0;}
+        li:nth-of-type(4){height: 20px; font-size: 1.25em; padding: 15px 0;}
+        span{@extend %hidden;}
+    }// ul
+}// #sub_box 
+
+
+/* -- movie_box -------------------------------------- */
+#movie_box{position: relative;
+    #movie_tabs{
+        width: 100%; 
+        height: 50px;
+        background-color: $black;
+        border-bottom: 4px solid $white;
+        >ul{
+            width: 960px; 
+            height: 50px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 0 300px;
+            >li{
+                width: 180px; 
+                height: 100%;
+                float: left;
+                
+                >a{
+                    width: 180px; 
+                    height: 100%;
+                    float: left;
+                    display: block;
+                    text-decoration: none;
+                    box-sizing: border-box;
+                    padding: 14px 46px 20px 46px;
+                    color: $white;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                    &:hover{color: $orange;}
+                } //a
+            } //li
+            li.on>a{color: $orange;}
+        } // ul
+    } // #movie_tabs
+    /* --- //#movie_tabs -------------------------------------------------- */
+#tab_box{width: 200%; height: auto;
+         position: relative;    
+         float: left;
+         transition: all 0.5s;}
+#tab_box01.click{left: 0; z-index: 100}
+#tab_box01{width: 50%; height: auto; 
+           position: absolute; left: -100%; z-index: -100; float: left;
+           background-color: #fff;
+    >#now_box{
+            width: 100%; 
+            height: 500px;
+            background-image: url(../img/show/now_show.jpg);
+            background-position: center -50px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            
+            >.opacity_bar{
+                width: 100%; 
+                height: 200px;
+                background-color: rgba($black, 0.6);
+                background-position: bottom bottom;
+                position: absolute;
+                bottom: 0;
+                >.now_show{
+                    width: 960px;  
+                    height: 100%;
+                    margin: 0 auto;
+                    box-sizing: border-box;
+                    padding: 0 50px 10px;
+                    >li{width: 100%; height: 50%; 
+                        color: $white; text-align: left;}
+                    >.film_title{
+                        text-indent: 1em;
+                        font-size: 2rem;
+                        font-weight: bold;
+                        line-height: 90px;
+                        //margin-bottom: 24px;
+                    }
+                >.synop{
+                    font-size: 0.9rem;
+                    font-weight: normal;
+                    }
+                } // .now_show
+            } // .opacity_bar
+        } //#now_box
+        /* -- //#now_box -----------------------------*/
+        >#now_box2{width: 960px; height: auto;
+                   margin: 0 auto;
+                   padding: 60px 40px; box-sizing: border-box;
+            >#content_box{
+                width: 100%;
+                height: 1089px;
+                position: relative;
+                >#film_box{
+                    width: 500px;
+                    height: 325px;
+                    float: left;
+                    >.film_info{
+                        width: 100%;
+                        height: 100%;
+                        color: $black;
+                        >dt{width: 100%;
+                            height: 92px;
+                            text-align: left;
+                            text-indent: 1em;
+                            border-bottom: 1px solid #e3e3e3;
+                            margin-bottom: 20px;
+                            >strong{
+                                font-size: 2.2rem;
+                                font-weight: bold;
+                                line-height: 60px;
+                                }
+                            >p{
+                                font-size: 0.8rem;
+                                font-weight: bold;
+                                text-indent: 1.5em;
+                            }
+                        }
+                        >dd{
+                            width: 100%;
+                            height: 210px;
+                            box-sizing: border-box;
+                            padding-top: 20px;
+                            padding-right: 258px;
+                            border-bottom: 1px solid #e3e3e3;
+                            text-indent: 1em;
+                            >ul{width: 100%; 
+                                >li{color: $black;
+                                    font-size: 0.8rem;
+                                    text-align: left;
+                                >p{
+                                    float: left;
+                                    font-weight: normal;
+                                    margin-bottom: 16px;
+                                    >strong{float: left;
+                                        font-weight: bold;
+                                        margin-right: 34px;}
+                                    }
+                                }// li
+                            } // ul
+                        } // dd
+                    } // .film_info
+                } // #film_box
+    /* // 영화 정보 --------------------------------------------------------------------------*/      
+                
+            >#poster{
+                width: 380px;
+                height: 325px;
+                float: left;
+                box-sizing: border-box;
+                padding-left: 120px;
+                /*padding: 0 60px;
+                margin-top: 40px;
+                margin-left: 90px;*/
+                >img{
+                    width: 100%;
+                    display: block;}
+                } // #poster
+            >#film_gallery{
+                width: 100%; 
+                height: 164px;
+                margin: 0 auto;
+                float: left;
+                margin-top: 60px;
+                //box-sizing: border-box;
+                //padding: 20px 12px 84px 64px;
+                /*margin: 20px 12px 40px 64px;*/
+                overflow: hidden;
+                position: relative;
+                >span{
+                    width: 100%;
+                    height: 24px;
+                    display: block;
+                    color: $black;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-indent: 1em;
+                    text-align: left;
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                    border-bottom:1px solid #e3e3e3;}
+                 >.gall_btn{
+                     width: 40px; 
+                     height: 100px; 
+                     position: absolute; 
+                     top: 54px; z-index: 200;
+                     transition: all 0.5s;
+                        &:hover i{color: $orange; transform:scale(1.2);
+                                  text-shadow: 1px 2px 4px #555;}
+                        &.lft_btn{left: 0;}
+                        &.rgt_btn{right: 0;}
+                        >button{width: 100%; height: 100%; cursor: pointer; 
+                                background-color: transparent;
+                            >i{color: rgba($orange, 0.5); font-size: 3rem; transition: all 0.5s; }
+                            >span{width: 0; height: 0; display: block; overflow: hidden;}
+                        }// button
+                    }// .gall_btn
+                >.film_gall{
+                    width: 300%; 
+                    height: 110px; 
+                    margin-left: -100%;
+                    >li{
+                        width: calc(100% / 3); 
+                        height: 100%;
+                        float: left; 
+                        >a{background-repeat: no-repeat;
+                           background-position: center center;
+                           background-size: contain;
+                           float: left;
+                            >img{width: 100%;}
+                        }
+                        &#gallery_01{
+                            >a{width: 25%; height: 100%; display: block;
+                            }// a
+                        }// #gallery_01
+                        &#gallery_02{
+                            >a{width: 25%; height: 100%; display: block;
+                            }// a
+                        }// #gallery_02
+                        &#gallery_03{
+                            >a{width: 25%; height: 100%; display: block;
+                            }// a
+                        }// #gallery_03
+                        &#gallery_04{
+                            >a{width: 25%; height: 100%; display: block;
+                            }// a
+                        }// #gallery_04
+                        } // li
+                    } // ul 
+                } // #film_gallery
+    /* // 갤러리  -----------------------------------------------------------------*/    
+                
+            >#film_trailer{ 
+                width: 100%; 
+                height: 480px; 
+                margin-top: 60px;
+                float: left;
+               
+                >span{
+                    width: 100%;
+                    height: 24px;
+                    display: block;
+                    color: $black;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-indent: 1em;
+                    text-align: left;
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                    border-bottom:1px solid #e3e3e3; }
+                >iframe{
+                    width: 100%;
+                    height: 410px;
+                    box-sizing: border-box;
+                    padding: 0 100px;}
+                } // #film_trailer    
+    /* // 예고편 --------------------------------------------------------- */            
+            } // #content_box
+        } // #now_box2
+    } // #tab_box01
+    #tab_box02.click{z-index: 100;}
+    #tab_box02{width: 50%; height: auto; 
+               position: absolute; z-index: -100; float: left;
+        >#soon_film_box{
+            width: 960px;
+            height: 1000px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 60px 20px;
+            >.soon_box{
+                width: 420px;
+                height:240px;
+                float: left;
+                margin-right: 80px;
+               /* background-color: #fac;*/
+                margin-bottom: 60px;
+                &:nth-of-type(even){margin-right: 0;}
+                >img{
+                    width: 180px;
+                    height:  100%;
+                    margin-right: 20px;
+                    float: left;
+                    background-color: #333; }
+                >dl{
+                    width: 180px;
+                    height: 100%;
+                    float: right;
+                    box-sizing: border-box;
+                    padding: 20px 10px;
+                    /*background-color: #afc;*/
+                    >dt{
+                        width: 100%;
+                        height: 50px;
+                        box-sizing: border-box;
+                        padding: 10px 10px;
+                        margin-bottom: 10px;
+                        border-bottom: 1px solid #e3e3e3;
+                        >strong{
+                            color: $black;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            text-align: left; }
+                    } // dt
+                    >dd{
+                        width: 100%;
+                        height: 150px;
+                        >ul{
+                            width: 100%;
+                            height: 100%;
+                            box-sizing: border-box;
+                            padding: 0 10px;
+                            >li{width: 100%;
+                                color: $black;
+                                font-size: 0.8rem;
+                                text-align: left;
+                                &:nth-child(1){height: 40px; line-height: 40px;}
+                                &:nth-child(2){height: 70px;}
+                                &:nth-child(3){height: 40px; line-height: 40px;}
+                                >p{
+                                    font-weight: normal;
+                                    >strong{
+                                        font-weight: bold;
+                                        margin-right: 10px;}
+                                }
+                                >span{
+                                    width: 120px;
+                                    text-align: left;
+                                    margin-left: 34px;}    
+                            }
+                        }
+                    }
+                }
+            } // .soon_box
+            >.soon_film07{margin-bottom: 0;}
+            >.soon_film08{margin-bottom: 0;}
+        } // #soon_film_box
+    }  //#tab_box02  
+} // #movie_box
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,302 @@
+// pc.scss
+
+/*------------------pc (960px)-----------------*/
+@media screen and (min-width: 769px) {
+    #webHead{
+        width: 100%; height: 160px;
+        border-bottom: 10px solid $brown01;
+        box-sizing: border-box;
+        background-color: #fff;
+        #gnb{width: 100%; height: 45px;
+             padding: 8px 10px 6px 75%;
+             box-sizing: border-box;
+             background-color: $baseBeige;
+            h2, span, legend, label{width: 0; height: 0; 
+                display: block; overflow: hidden;}
+            form{width: 100%; max-width: 200px; height: 100%; 
+                 transition: all 0.5s;
+                fieldset{width: 100%; height: 100%;}
+                #search{width: 80%; height: 30px; 
+                      border: 0;
+                      border-bottom:2px solid $brown02;
+                      box-sizing: border-box; 
+                      display: block; 
+                      float: left;
+                      font-size: 1rem;}
+                input{font-size: 1.5rem;}
+                .fa-search{width: 20%; height: 30px;
+                           display: block;
+                           color: #fff; font-weight: bold;
+                           text-align: center; line-height: 30px;
+                           background-color: $brown02; 
+                           float: left;}
+            }// form
+        }// #gnb
+        #nav{max-width: 960px; min-width: 768px; height: 115px;
+             margin: 0 auto; 
+            h1{width: 19vw; min-width: 250px; height: 115px;
+               padding: 10px 20px 0; 
+               box-sizing: border-box; 
+               float: left;
+                a{width: 100%; height: 100%; display: block;
+                  background-repeat: no-repeat;
+                  background-position: top center;
+                  background-size: contain; 
+                  background-image: url("../img/index/header/Logo_tab.png");
+                  overflow: hidden;
+                }// a
+               }// h1
+            ul{max-width: 600px; min-width: 450px; height: 115px; 
+               float: right; 
+                li{width: auto; height: 30px;
+                   margin: 60px 0.5vw 0;
+                   padding: 5px 15px 20px;
+                   float: left;
+                    &:hover{background-color: $brown01;         
+                        border-radius:6px; transition: all 1s;
+                        a{color: #fff;}
+                    }
+                    &:active{background-color: $brown01;         
+                        border-radius:6px; transition: all 1s;
+                        a{color: #fff;}
+                    }
+                    a{width: 100%; height: 100%; display: block;
+                      font-weight: bold; font-size: 1.2rem; color: $brown01; 
+                      text-align: center; line-height: 50px;
+                        &:hover{color: #fff;}
+                    }// a
+                }// li
+            }// ul
+        }// #nav
+    }// #webHead
+    
+    
+    #banner{
+        width: 100%; height: auto/*700px*/;
+        position: relative; overflow: hidden;
+        #banner_01{width: 100%; height: 38vw/*450px*/;
+                   overflow: hidden;
+          .btn{width: 60px; height: 43.94vw;
+               position: absolute; z-index: 100;
+               top: 0;
+            }// .btn
+          .button_01{left: 0;}
+          .button_02{right: 0;}
+          button{width: 60px; height: 60px;
+              font-size: 3.5em;
+              position: absolute; z-index: 120;
+              background-color: transparent;
+            }
+          #left{top: calc(50% - 30px);}
+          #right{top: calc(50% - 30px);}
+          button>i{width: 100%; height: 100%; 
+                   display: block; color: #fff; 
+                   text-shadow: 1px 1px 1px #555;
+                   text-align: center; line-height: 60px;
+                   }
+          span{width: 0; height: 0; display: block; overflow: hidden;}
+        }// #banner_01
+        #select>li:hover{background-color: $brown01;
+               box-shadow: 1px 1px 1px #fff;}
+        #select>li:active{background-color: $brown01;
+               box-shadow: 1px 1px 1px #fff;}
+        #select li.on{background-color: $brown01;
+               box-shadow: 1px 1px 1px #fff;}
+        #slideBanner{width: 300%; height: 100%;
+            overflow: hidden; margin-left: -100%;
+            li{width: calc(100% / 3); height: 100%; float: left; 
+               background-repeat: no-repeat;
+               background-position: top center;
+               background-size: cover;
+                &#slide_01{
+                    background-image: url("../img/index/banner/banner_01.png");}
+                &#slide_02{
+                    background-image: url("../img/index/banner/banner_02.jpg");}
+                &#slide_03{
+                    background-image: url("../img/index/banner/banner_03.jpg");}
+                &#slide_04{
+                    background-image: url("../img/index/banner/banner_04.png");}
+                span{width: 0; height: 0; display: block; overflow: hidden;} 
+            }// li
+        }// slideBanner
+        #banner_02{width: 100%; height: 24.41vw/*250px*/;
+                   margin-top: 4vw;
+                   padding: 4.5vw 4vw; box-sizing: border-box;
+                   background-repeat: no-repeat;
+                   background-position: top center;
+                   background-size: cover;
+                   background-image: url(../img/index/banner/event.png);
+            >a{width: 80%; height: 15.41vw; display: block;
+               margin: 0 auto;
+               background-repeat: no-repeat;
+               background-position: center center;
+               background-size: cover;
+               background-image: url(../img/index/banner/event_banner.png);
+               box-shadow: 2px 2px 4px #555;
+            }
+        }
+    }// #banner
+    #contents{
+        width: 93.75vw; max-width: 960px; min-width: 768px; height: 88vw;
+        margin: 0 auto;
+        div{background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            float: left;}
+        #content_01{width: 93.75vw; max-width: 960px; min-width: 768px; height: 52vw;
+                    margin: 0 auto;
+                    padding-top: 4vw/*30px*/;
+            a{width: 100%; height: 100%; display: block;
+                &:hover{background-color: rgba(#fff, 0.6); transition: all 0.5s;}
+            }  
+            a:hover>span{
+                         width: 100%; height: 100%;
+                         display: block; color: $brown02; 
+                         font-weight: bold; text-align: center;
+                         font-size: 2rem;
+                         line-height: 4.88vw/*50px*/;
+                         border-bottom: 5px solid $brown02;
+                         box-sizing: border-box;}
+            #box_01{width: calc(55% - 0.97vw); height: 24vw; 
+                    margin-bottom: 4vw/*30px*/;
+                    margin-right: 0.97vw/*10px*/;
+                    background-image: url(../img/index/article/about.jpg);
+                  a{padding: 7.3vw 20%; 
+                    box-sizing: border-box;
+                }}
+            #box_02{width: 45%; height: 24vw; 
+                    margin-bottom: 4vw/*30px*/;
+                    background-size: contain;
+                    background-image: url(../multi/guylian.gif);
+                a, span{width: 0; height: 0; display: block; overflow: hidden;}
+            }
+            #box_03{width: 30%; height: 24vw; 
+                margin-bottom: 4vw/*30px*/; 
+                    background-image: url(../img/index/article/mobile_recipe.png);
+                a{padding: 7.3vw/*75px*/ 20%;
+                    box-sizing: border-box;}
+                
+            }
+            #box_04{width: calc(70% - 0.97vw); height: 24vw; 
+                    margin-bottom: 4vw/*30px*/; margin-left: 0.97vw/*10px*/;
+                    background-image: url(../img/index/article/mobile_shop.png);
+                a{padding: 7.3vw/*75px*/ 30%;
+                    box-sizing: border-box;}
+            }
+        }// #content_01
+        #content_02{width: 93.75vw; max-width: 960px;
+            min-width: 768px; height: 26vw;
+            margin-top: 4vw/*30px*/;
+            float: left;
+            div{width: 50%; height: 100%; float: left; 
+                background: linear-gradient(45deg, $brown02, $brown03, $brown02);}// div
+            #difference{position: relative;
+                dl{width: 100%; height: 100%;
+                   dt{width: 100%; height: 8vw;
+                       margin-bottom: 2vw;
+                       border-bottom: 0.8vw solid #fff;
+                       box-sizing: border-box;
+                        span{width: 100%; height: 100%; display: block;
+                         font-weight: bold; text-align: center; line-height: 10vw;
+                         font-size: 1.4rem; color: #fff;}
+                    }// dt
+                    dd{width: 100%; height: 4vw;
+                       padding-top: 2vw;
+                       box-sizing: border-box;
+                       float: left;
+                        >span{
+                             width: 100%; height: 100%;
+                             display: block;
+                             text-align: center;
+                             font-size: 1.2em;
+                             color: #fff;
+                        }// span 
+                    }// dd
+                }// dl
+                img{position: absolute; z-index: 200;
+                    &:nth-of-type(1){width: 9vw; top: 4.5vw; right: 1vw;}
+                    &:nth-of-type(2){height: 7.5vw; bottom: 1vw; left: 1vw;}
+               }// img
+            }// #difference
+            #mission{width: calc(50% - 0.97vw);
+                     margin-left: 0.97vw;
+                dl{width: 100%; height: 100%;
+                   dt{width: 100%; height: 8vw;
+                       border-bottom: 0.8vw solid #fff;
+                       box-sizing: border-box;
+                        span{width: 100%; height: 100%; display: block;
+                         font-weight: bold; text-align: center; line-height: 10vw;
+                         font-size: 1.4rem; color: #fff;}
+                    }// dt
+                    dd{width: 100%; height: 18vw;
+                       padding: 1vw;
+                       box-sizing: border-box;
+                        >span{
+                             width: 100%; height: 100%;
+                             display: block;
+                             text-align: left;
+                             text-indent: 16px;
+                             font-size: 1.2em;
+                             color: #fff;
+                        }// span 
+                    }// dd
+                }// dl
+            }// #mission
+        }// #content_02
+    }// #content
+    #webFoot{
+        width: 100%; height: 20vw; min-height: 200px;
+        margin-top: 4vw/*30px*/;
+        background-color: #555;
+        >#footBox{width: 93.75vw; max-width: 960px;
+            min-width: 768px; 
+            height: 100%; margin: 0 auto;
+            padding-top: 20px; box-sizing: border-box;
+        >#adressBox{width: calc(38% - 2vw); height: 100%; float: left;
+            margin-left: 2vw;
+            h2{width: 100%; height: 7vw; float: left;
+               padding: 0.5vw 1vw 1vw; box-sizing: border-box;
+               a{width: 100%; height: 100%; display: block;
+                  background-repeat: no-repeat;
+                  background-position: left center;
+                  background-size: contain;
+                  background-image: url("../img/index/header/Logo_tab.png");}
+            }// h2
+            address{width: 100%; height: 4vw; float: left; color: #fff; font-size: 1.3vw;}
+            p{width: 100%; height: 2vw; float: left;
+              color: #fff; font-size: 1.3vw;}
+        }// #adressBox
+        >#sns{width: 60%; height: 8vw; float: right;
+              padding: 1vw; box-sizing: border-box;
+              text-align: center;
+            ul{width: 30vw; height: 100%; margin: 0 auto;
+                li{width: 5vw; height: 5vw;
+                   margin-left: 2vw; 
+                   float: left;
+                   font-weight: bold; font-size: 5vw;
+                   text-align: center; 
+                   line-height: 7vw;
+                    &:last-of-type{margin-right: 2vw;}
+                    a{width: 100%; height: 100%; display: block; color: #fff;}
+                }// li
+            }// ul
+        }// #sns
+        >#footMenu{width: calc(60% - 4vw); height: 10vw; 
+            margin: 0 2vw; float: right;
+            border-top: 1px solid #fff;
+            ul{width: 100%; height: 100%; margin: 0 auto;
+               padding-top: 1vw;
+                li{width: calc(100% / 3); height: 3vw; float: left;
+                    a{width: 100%; height: 100%; display: block; 
+                        span{width: 100%; height: 100%; display: block; 
+                             font-size: 1.6vw; font-weight: bold;
+                             text-indent: 3vw;
+                             text-align: left; line-height: 3vw; color: #fff;}
+                    }// a
+                }// li
+            }// ul
+        }// #footMenu
+     }// #footBox
+    }// #webFoot
+}// pc
+

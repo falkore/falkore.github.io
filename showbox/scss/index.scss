@@ -1,0 +1,148 @@
+@import 'basic.scss';
+@import 'head.scss';
+@import 'foot.scss';
+
+
+/* -- body & wrap -------------------------------------*/
+body{@include backOpt($size: cover);
+     background-attachment: fixed;}
+#wrap {width: 100%; height: auto; 
+    #web_head{width: 100%; height: 130px; background-color: $black;
+              position: relative;
+    }// #web_head
+    #banner{width: 100%; height: 500px; background-color: #fff}
+    #contents_01{width: 100%; height: 900px; padding: 60px 30px; 
+                 background-color: #fff;
+        >.wrap{width: 900px; height: 900px; margin: 0 auto; }
+    }// #contents_01
+    #contents_02{width: 100%; height: 350px;}
+    #web_foot{width: 100%; height: 150px; background-color: $black;}
+    .wrap{width: 960px; height: 100%; margin: 0 auto;}
+}// #wrap
+
+
+
+/* -- banner -------------------------------------*/
+
+#banner{
+    ul{width: 300%; height: 100%; 
+        //margin-left:-100%;
+        li{width: calc(100% / 3); height: 100%; float: left;
+            a{@extend %block; 
+              @include backOpt($size: cover);
+              background-attachment: fixed;
+              background-size: full;}
+            &:nth-child(1)>a{
+                background-image: url("../img/index/banner/movie_image.jpg");
+            }
+            &:nth-child(2)>a{
+                background-image: url("../img/index/banner/poster_01.jpg");
+            }
+            &:nth-child(3)>a{
+                background-image: url("../img/index/banner/poster_02.jpg");
+            }
+        }// li
+    }// ul
+}// #banner
+
+/* -- contents -------------------------------------*/
+#contents_01>.wrap>div{
+    width: 100%; height: 280px; margin-bottom: 30px;
+    &:last-of-type{margin-bottom: 0;}
+        >dl{width: 100%; height: 100%;
+            >dt{width: 135px; height: 172px; margin-right: 20px; 
+                padding: 54px 64px; float: left;
+                background-color: $black;}
+            >dt>a:first-of-type{width: 100%; height: 28px; padding-bottom: 28px; display: block;
+                                @include fontOpt($bold: bold, $size: 1.5rem);
+                                text-align: center; line-height: 28px;
+            }
+            >dt>a:last-of-type{width: 80%; height: 116px; margin: 0 10%; display: block;}
+            >dd{width: 280px; height: 280px; float: left; background-color: #fff;
+                &:first-of-type{margin-right: 20px;}
+            
+            }// dd
+        }// dl
+}// #contents_01>div
+#contents_01{
+     #box_1>dl{
+        dt>a:last-of-type{@include backOpt;
+                    background-image: url("../img/index/contents/news_icon.png");}
+    }// #box_1>dl
+     #box_2>dl{
+        dt>a:last-of-type{@include backOpt;
+                    background-image: url("../img/index/contents/now_icon.png");}
+    }// #box_2>dl
+     #box_3>dl{
+        dt>a:last-of-type{@include backOpt;
+                    background-image: url("../img/index/contents/coming_icon.png");}
+    }// #box_3>dl
+}// #contents_01
+#contents_01{
+    #box_1>dl{
+            dd>dl{width: 100%; height: 100%; border: 5px solid $gray02;
+                  box-sizing: border-box;
+                dt{width: 100%; height: 47px; padding-top: 40px; float: left;
+                    border-bottom: 3px solid $gray02;
+                   span{width: 100%; height: 20px; display:block;
+                      @include fontOpt($bold: bold, $size: 1.25rem, $color: $black);
+                      text-align: center;
+                      }
+                }// dt
+                dd{width: calc(100% - 30px); height: 65px; padding: 20px 15px 0; 
+                   float: left;
+                   &:first-of-type{border-bottom: 0.1px solid $gray02;}
+                   span{width: 100%; height: 26px; display: block; line-height: 26px;
+                        @include fontOpt($color: $black, $size: 0.875rem, $bold: bold); 
+                    &:nth-child(1){text-align: left;}
+                    &:nth-child(2){text-align: right;}
+                    }
+                }// dd
+                a{@extend %block;}
+            }// dd>dl
+        }// #box_1>dl
+    #box_2>dl{
+            dt{width: 135px; height: 172px;
+               padding: 50px 60px;
+               background-color: $white;
+               border: 5px solid $gray02;
+                >a{@include fontOpt($bold: bold, $size: 1.5rem, $color: $black);}
+            }// dt
+            dd{
+                >a{@extend %block;
+                 &:hover{opacity: 0.7;}
+                  >img{width: 100%;}
+                }
+            }// dd
+        }//#box_2>dl
+    #box_3>dl{
+            dd{
+                >a{@extend %block;
+                 &:hover{opacity: 0.7;}
+                  >img{width: 100%;}
+                }
+            }
+        }//dl
+}// #contents_01
+
+#contents_02{
+    ul{width: 680px; height: 160px; margin: 0 auto; padding-top: 95px;
+        li{width: 160px; height: 160px; margin-right: 100px; float: left;
+            &:nth-child(1){@include backOpt;
+                           background-image: url("../img/index/contents/mail.png");
+                >a{width: 100%; height: 100%; display: block;}
+            }
+            &:nth-child(2){@include backOpt;
+                           background-image: url("../img/index/contents/faq.png");
+                >a{width: 100%; height: 100%; display: block;}
+            }
+            &:last-of-type{margin: 0; @include backOpt;
+                           background-image: url("../img/index/contents/contact.png");
+                >a{width: 100%; height: 100%; display: block;}  
+            }
+            &:hover{background-color: rgba($black, 0.8);}
+        }// li
+    }// ul
+}// #contents_02
+
+

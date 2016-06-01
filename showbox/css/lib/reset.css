@@ -1,0 +1,61 @@
+/*		 reset CSS */
+
+/*--------webfont_noto_sans_guide---------------
+
+font-family: 'noto_sans_krblack';
+font-family: 'noto_sans_krbold';
+font-family: 'noto_sans_krlight';
+font-family: 'noto_sans_krmedium';
+font-family: 'noto_sans_kr_regular';
+font-family: 'noto_sans_krthin';
+
+*/
+
+
+		*, html, body, h1, h2, h3, h4, h5, h6, p, div, img{
+			margin: 0; padding:0; border:0; vertical-align: top; 	color:#333; 
+			/*font:100%/1.2 "myriad pro", arial, "noto sans", nanumGothic, dotum, sans-serif*/;}
+		ul, ol, li{list-style: none;}
+		a{text-decoration: none; color:#777;}
+		a:hover{color: #f5a601;}
+/*		table,tr,td,th,thead,tbody,tfoot{
+            border:1px solid #777; 
+			border-spacing: 0; border-collapse: collapse;}*/
+		address{font-style:normal;}
+		input, textarea{border:1px solid #777; text-indent:5px;}
+		input[type="submit"],
+		input[type="reset"],
+		input[type="image"],
+		input[type="button"]{border:0}
+		input:focus{background-color:#fcc;}
+
+/*html5*/
+header, article, nav, aside, footer, section, figure, figcation{ 
+display: block;}
+
+/**
+ * --------------------------------------------------
+ * class/id 이름 사용법규칙:
+ * - 단순히 body에 이름생성후 직접 디자인시에는 단어와 단어사이는 _ 를 붙인다 (word_box)
+ * - form영역내에 이름생성시 뒤에오는 단어 첫글자를 대문자로 사용한다 (wordBox)
+ * - normalize형식으로 작성시에는 단어사이에 - 을 붙인다. (word-box)
+ * - 단, 개인이 미리작성한 내용일경우(부트스트랩/awesome류 제외) 앞글자에 me를 붙인다.
+ * --------------------------------------------------
+ */
+/*		normalize */
+.me-firstLeft{margin-left:0; padding-left:0;  border-left:0;}
+.me-lastRight{margin-right:0; padding-right:0; border-right:0;}
+.me-clearfix::after, .me-clearfix::before{content:""; display:block; clear:both;}
+h2,h3,h4,h5,h6{width: 0; height: 0; overflow: hidden; font-size:0;}
+.me-link a{background-repeat: no-repeat; display: block;width: 100%; height: 100%;}
+a>span, legend, .me-hidden{width: 0; height: 0; display: block; overflow: hidden;}
+/* -- // 보이지 않게 숨기기 -- */
+
+
+
+
+
+
+
+
+

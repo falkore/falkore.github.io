@@ -1,0 +1,287 @@
+// tablet.scss
+
+/*------------------tablet-------------------*/
+@media screen and (max-width: 768px) and (min-width: 480px){
+    #container{width: 100%; height: auto; overflow: hidden;        
+         background-image: url(../img/tab_back.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-attachment: fixed;
+         background-position: center center;}
+    #webHead{
+        width: 100%; height: 155px;
+        background-color: $baseBeige;
+        position: relative;
+        #gnb{width: calc(26% - 14px); height: 30px; 
+             margin-left: 74%; 
+             margin-bottom: 6px;
+             padding-top: 8px;
+             padding-right: 10px;   
+            h2, span, legend, label{width: 0; height: 0; 
+                display: block; overflow: hidden;}
+            form{width: 100%; max-width: 200px; height: 100%; 
+                 transition: all 0.5s;
+                fieldset{width: 100%; height: 100%;}
+                #search{width: 80%; height: 30px; 
+                      border: 0;
+                      border-bottom:2px solid $brown02;
+                      box-sizing: border-box;
+                      display: block;
+                      float: left;
+                      font-size: 1rem;
+                      }
+                input{font-size: 1.5rem;}
+                .fa-search{width: 20%; height: 30px;
+                           display: block;
+                           color: #fff; font-weight: bold;
+                           text-align: center; line-height: 30px;
+                           background-color: $brown02; 
+                           float: left;}
+            }// form
+        }// #gnb
+        
+        #nav{width: 100%;
+             height: 100px;/*130px*/ 
+             margin-top: 18px;
+             padding-top: 50px;
+             box-sizing: border-box;
+             background-color: #fff;
+            h1{width: 50%; height: 70px;
+               margin: 10px 0 0;
+               float: left;
+               position: absolute;
+               z-index: 100; top: 15px;
+               left: calc(25%);
+                a{width: 100%; height: 100%; display: block;
+                  background-repeat: no-repeat;
+                  background-position: top center;
+                  background-size: contain; 
+                  background-image: url("../img/index/header/Logo_tab.png");
+                  overflow: hidden;
+                }// a
+               }// h1
+            .top{width: 100%; height: 0; display: block;}
+            .fix{position: fixed; top: 0; z-index: 200;}
+            .main{width: 100%; height: 50px; 
+               float: left;
+               padding: 10px 20px 0;
+               border-bottom: 8px solid $brown01;
+               box-sizing: border-box;
+               background-color: #fff;
+                li{width: calc(25% - 10px); height: 100%;
+                   margin: 0 5px;
+                   /*padding-bottom: 10px; box-sizing: border-box; */float: left;
+                    &:hover{background-color: $brown01;     border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                        a{color: #fff;}
+                    }
+                    &:active{background-color: $brown01;      border-top-left-radius: 6px;
+                         border-top-right-radius: 6px;
+                        a{color: #fff;}
+                    }
+                    a{width: 100%; height: 100%; display: block;
+                      font-weight: bold; font-size: 1.2rem; color: $brown01; 
+                      text-align: center; line-height: 50px;
+                        &:hover{color: #fff;}
+                    }// a
+                    span{width: 0; height: 0;
+                    display: block; overflow: hidden;}
+                    &.on{background-color: $brown01; border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                        a{color: #fff;}
+                    }
+                }// li
+            }// ul
+        }// #nav
+    }// #webHead
+    
+    #subTitle{
+       width: 100%; height: 15vw; 
+       transition: all 0.5s ease;
+        h3{width: 100%; height: 100%; text-align: left; text-indent: 10vw;  
+           font-size: 5.5vw; 
+            a{width: 100%; height: 100%; display: block; 
+              color: #fff; font-weight: bold;
+              line-height: 28vw; 
+              background-size: cover; transition: all 0.5s ease-in;
+              text-shadow: 1px 2px 4px rgba(#555, 0.5);
+              }// a
+        }// h3      
+    }// #subTitle
+    #company{width: 100%; height: 73vw;
+        border-bottom: 0.3vw solid $brown02;
+        box-sizing: border-box;
+        background-color: #fff;
+        h4{width: 40vw; height: 15vw; display: block;
+           margin: 0 auto;
+           padding-top: 8vw; padding-bottom: 2vw;
+           border-bottom: 1vw solid $beige; 
+           box-sizing: border-box;
+           text-align: center; line-height: 5vw;
+           color: $brown02; font-weight: bold;
+           font-size: 1.5em;
+        }// h4
+        img{width: 38vw; display: block; 
+            margin-top: 6vw; 
+            margin-left: 2vw;
+            box-sizing: border-box; float: left;
+            box-shadow: 2px 2px 2px #555;
+        }
+        div{width: 54vw; height: 48vw; 
+            margin-top: 2vw;
+            margin-bottom: 5vw;
+            padding: 2vw;
+            box-sizing: border-box; float: right;
+            overflow: hidden;
+            p{width: 100%; height: 100%; 
+              text-indent: 1em; overflow: scroll; font-size: 1.2em;
+              padding-right: 1000px; padding-bottom: 1000px; color: $brown01;
+            }
+        }
+    }// #company 
+    #history{width: 100%; height: 71vw;
+        border-bottom: 0.3vw solid $brown02;
+        box-sizing: border-box;
+        background-color: #fff;
+        h4{width: 40vw; height: 15vw; display: block;
+           margin: 0 auto;
+           padding-top: 8vw; padding-bottom: 2vw;
+           border-bottom: 1vw solid $beige; 
+           box-sizing: border-box;
+           text-align: center; line-height: 5vw;
+           color: $brown02; font-weight: bold;
+           font-size: 1.5em;
+        }// h4
+        img{width: 38vw; display: block; 
+            margin-top: 6vw; 
+            margin-left: 2vw;
+            box-sizing: border-box; float: left;
+            box-shadow: 2px 2px 2px #555;
+        }
+        div{width: 54vw; height: 48vw; 
+            margin-top: 2vw;
+            padding: 2vw;
+            box-sizing: border-box; float: right;
+            overflow: hidden;
+            p{width: 100%; height: 100%; 
+              text-indent: 1em; overflow: scroll; font-size: 1.2em;
+              padding-right: 1000px; padding-bottom: 1000px; color: $brown01;
+            }
+        }
+    }// #history
+    #mission{width: 100%; height: 44vw;
+        border-bottom: 0.3vw solid $brown02;
+        box-sizing: border-box;
+        background-color: rgba(#fff, 0.4);
+        transition: all 0.5s ease-in;
+        h4{width: 40vw; height: 15vw; display: block;
+           margin: 0 auto;
+           padding-top: 8vw; padding-bottom: 2vw;
+           border-bottom: 1vw solid $brown02; 
+           box-sizing: border-box;
+           text-align: center; line-height: 5vw;
+           color: $brown02; font-weight: bold;
+           font-size: 1.5em; 
+        }// h4
+        div{width: calc(100% - 1.5vw); height: 23vw; 
+            margin-top: 4vw;
+            padding: 2vw;
+            box-sizing: border-box; float: right;
+            overflow: hidden;
+            p{width: 100%; height: 100%; 
+              text-indent: 1em; overflow: scroll; font-size: 1.2em;
+              font-weight: bold;
+              padding-right: 1000px; padding-bottom: 1000px; color: $brown01;
+            }
+        }
+    }// #mission
+    #news{width: 100%; height: auto;
+        padding-bottom: 15vw;
+        background-color: #fff;
+        h4{width: 40vw; height: 15vw; display: block;
+           margin: 0 auto;
+           padding-top: 8vw; padding-bottom: 2vw;
+           border-bottom: 1vw solid $beige; 
+           box-sizing: border-box;
+           text-align: center; line-height: 5vw;
+           color: $brown02; font-weight: bold;
+           font-size: 1.5em;
+        }// h4
+        #news_01{width: 100%; height: 70vw;
+            img{width: 50vw; margin: 0 auto; display: block;
+                padding: 6vw; box-sizing: border-box;
+            }
+            p{width: 70vw; height: auto; 
+            margin: 10px 15vw; text-align: center;}
+            p:first-of-type{font-size: 1.5em; font-weight: bold; color: $brown01;
+            border-bottom: 1px solid $brown02;
+            }
+            p:last-of-type{font-size: 1.3em; font-weight: normal; color: $brown02;}
+        }// #news_01
+        #news_02{width: 100%; height: 70vw;
+            img{width: 50vw; margin: 0 auto; display: block;
+                padding: 6vw; box-sizing: border-box;
+            }
+            p{width: 70vw; height: auto; 
+            margin: 10px 15vw; text-align: center;}
+            p:first-of-type{font-size: 1.5em; font-weight: bold; color: $brown01;
+            border-bottom: 1px solid $brown02;
+            }
+            p:last-of-type{font-size: 1.3em; font-weight: normal; color: $brown02;}
+        }// #news_02
+        #news_03{width: 100%; height: 70vw;
+            img{width: 50vw; margin: 0 auto; display: block;
+                padding: 6vw; box-sizing: border-box;
+            }
+            p{width: 70vw; height: auto; 
+            margin: 10px 15vw; text-align: center;}
+            p:first-of-type{font-size: 1.5em; font-weight: bold; color: $brown01;
+            border-bottom: 1px solid $brown02;
+            }
+            p:last-of-type{font-size: 1.3em; font-weight: normal; color: $brown02;}
+        }// #news_03
+    }// #news
+    #top{display: none;}
+    #webFoot{ 
+        width: 100%; height: 26.04vw;/*200px*/
+        background-color: $brown01;
+        padding-top: 3.5vw; 
+        position: relative;
+        #footBox{width: 100%; height: 100%;}
+        #adressBox{width: 100%; height: 100%; 
+        background-color: $brown01; float: left;
+            h2{width: 40%; height: 10.41vw;/*80px*/
+            margin-left: 0; margin-top: 3.5vw;
+                a{width: 100%; height: 100%; display: block;
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  background-size: contain;
+                  background-image: url("../img/index/header/Logo_tab.png");}
+            }// h2
+            address, p:first-of-type{display: none;}
+            #copyright{width: 100%; height: 2.604vw;
+                       display: block; 
+                       margin-top: 3.5vw; 
+                       text-align: center; line-height: 2.604vw;
+                       font-size: 1.2rem;
+                       color: #fff; 
+            }// #copyright
+        }// #adressBox
+        #sns{width: calc(60% - 4vw); height: 9vw; float: right;
+            padding: 3.5vw 2vw 2vw;
+            position: absolute; z-index: 100;
+            top: 4.8vw; right: 0;
+            ul{width: 100%; height: 100%;
+                li{width: 9vw; height: 9vw;
+                   margin-left: 3vw; float: left;
+                   font-weight: bold; font-size: 8.5vw;
+                   text-align: center; 
+                   line-height: 9vw;
+                    a{width: 100%; height: 100%; display: block; color: #fff;}
+                }// li
+            }// ul
+        }// #sns
+        #footMenu{display: none;}// #footMenu
+        
+    }// #webFoot
+}// tablet

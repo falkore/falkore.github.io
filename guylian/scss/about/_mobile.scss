@@ -1,0 +1,248 @@
+// mobile.scss 
+
+/*------------------mobile-------------------*/
+@media screen and (max-width: 480px){
+    #container{width: 100%; height: auto; overflow: hidden;        
+         background-image: url(../img/mobile_back.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-attachment: fixed;
+         background-position: center center;}
+    #webHead{
+        width: 100%; height: 80px;
+        padding: 20px 0 10px;
+        box-sizing: border-box;
+        position: relative; position: fixed; top: 0; z-index: 1000;
+        background-color: #fff;
+        transition: all 0.5s ease;
+        #gnb{width: 50px; min-width: 30px;
+             height: 50px; min-height: 30px;
+             padding-left: 10px;
+             float: left; font-size: 2.7rem;
+            h2{width: 100%; height: 100%;
+            color: $brown02; 
+            text-align: center; line-height: 40px;
+                >span{width: 0; height: 0; display: block; overflow: hidden;}
+            }// h2
+            form{width: 100%; height: 62.5vw; 
+                position: fixed; z-index: 500;
+                top: 80px; left: -100%;
+                background-color: rgba(#333,0.7);
+                opacity: 0.2; transition: all 0.5s;
+                fieldset{width: 90%; height: 30vw;
+                         margin: 0 5%; padding-top: 5vw}
+                legend, label{display: none;}
+                input{width: 78%; height: 15vw; 
+                      display: block;
+                      float: left;
+                      font-size: 1.8rem;}
+                .fa-search{width: 20%; height: 15vw;
+                           display: block;
+                           color: #fff; font-weight: bold;
+                           text-align: center; line-height: 15vw;
+                           background-color: #333; 
+                           float: left;}
+            &.on{left: 0; opacity: 1;}
+            }
+        }// #gnb
+        #nav{width: 50px; min-width: 30px;
+             height: 50px; min-height: 30px;
+             padding-top: 3px; padding-right: 10px;
+             float: right;
+             font-size: 2.9rem;
+             transition: all 0.5s ease;
+            h1{width: 50%; max-width: 140px; min-width: 80px;
+               height: 50px; max-height: 50px; min-height: 30px;
+               position: absolute; top: 20px;
+               right: 50%; margin-right: -70px;
+               background-image: url(../img/index/header/Logo.png);
+               background-repeat: no-repeat;
+               background-position: top center;
+               background-size: cover;
+               overflow: hidden;
+               a{width: 100%; height: 100%; display: block;} 
+            }// h1
+            h2{width: 100%; height: 100%;
+            color: $brown02; 
+            text-align: center; line-height: 40px;
+                >span{width: 0; height: 0; display: block; overflow: hidden;} 
+            }// h2
+            ul{width: 100%; height: 100vh; 
+               position: fixed; z-index: 500;
+               top: 80px; right: -100%;
+               margin: 0 auto;
+               padding: 10vw; box-sizing: border-box;
+               background-color: rgba(#222,0.8);
+               opacity: 0.2; transition: all 0.5s;
+               li{width: 100%; height: 20vw;
+                  border-bottom: 0.5vw solid #fff;
+                   a{width: 100%; height: 100%; display: block;
+                   line-height: 20vw; font-size: 1.8rem;
+                   color: #fff; font-weight: bold;
+                   text-indent: 1em;} 
+                }// li
+            &.on{right: 0; opacity: 1;}
+            }// ul
+        }// #nav
+    }// #webHead
+    #subTitle{width: 100%; height: 10vw; min-height: 50px;
+        margin-top: 80px;
+        h3{width: 100%; height: 100%; font-size: 1.3em;
+            a{width: 100%; height: 100%; display: block;
+              font-weight: bold; color: #fff;
+              text-align: center; line-height: 50px;
+              background-color: rgba($brown01, 0.9);
+            }// a
+        }// h3
+    }// #subTitle
+    img{display: none;}
+    #company{width: 100%; height: auto; 
+             padding: 6vw 0;
+             background-color: rgba($brown02, 0.3);
+        h4{width: 60vw; height: 15vw; display: block;
+           margin: 0 auto;
+           padding-top: 8vw; padding-bottom: 2vw;
+           border-bottom: 1vw solid $beige; 
+           box-sizing: border-box;
+           text-align: center; line-height: 5vw;
+           color: #fff; font-weight: bold;
+           font-size: 1.5em;}
+        img{width: 100%; display: block;
+            padding: 6vw 6vw 0; box-sizing: border-box;
+        }
+        div{width: calc(100% - 12vw); height: 0; 
+            background-color: rgba($brown01, 0.8);
+            padding: 0 6vw; 
+            overflow: hidden;
+            p{width: 100%; height: 100%;
+              padding-right: 1000vw;
+              padding-bottom: 1000vw;
+              overflow: scroll;
+              font-size: 1.5rem;
+              text-indent: 0.5rem;
+              color: #fff;}
+        }
+    }// #company
+    #history{width: 100%; height: auto; 
+             background-color: rgba($brown02, 0.3);
+        h4{width: 60vw; height: 15vw; display: block;
+           margin: 0 auto;
+           padding-top: 8vw; padding-bottom: 2vw;
+           border-bottom: 1vw solid $beige; 
+           box-sizing: border-box;
+           text-align: center; line-height: 5vw;
+           color: #fff; font-weight: bold;
+           font-size: 1.5em;}
+        img{width: 100%; display: block;
+            padding: 6vw 6vw 0; box-sizing: border-box;
+        }
+        div{width: calc(100% - 12vw); height: 0; 
+            background-color: rgba($brown01, 0.8);
+            padding: 0 6vw; 
+            overflow: hidden;
+            p{width: 100%; height: 100%;
+              padding-right: 1000vw;
+              padding-bottom: 1000vw;
+              overflow: scroll;
+              font-size: 1.5rem;
+              text-indent: 0.5rem;
+              color: #fff;}
+        }
+    }// #history
+    #mission{width: 100%; height: auto; 
+             padding: 6vw 0;
+             background-color: rgba($brown01, 0.5);
+        h4{width: 60vw; height: 15vw; display: block;
+           margin: 0 auto;
+           padding-top: 8vw; padding-bottom: 2vw;
+           border-bottom: 1vw solid $beige; 
+           box-sizing: border-box;
+           text-align: center; line-height: 5vw;
+           color: #fff; font-weight: bold;
+           font-size: 1.5em;}
+        div{width: 100%; height: auto/*300px*/;
+            padding: 6vw; box-sizing: border-box;
+            p{width: 100%; height: auto;
+              font-size: 1.4rem; 
+              text-indent: 0.5rem;
+              color: #fff;}
+        }
+    }// #mission
+    #news{width: 100%; height: auto; 
+        padding: 6vw 6vw 15vw; box-sizing: border-box;
+        background-color: rgba($brown02, 0.6); 
+        h4{width: 60vw; height: 15vw; display: block;
+           margin: 0 auto;
+           padding-top: 8vw; padding-bottom: 2vw;
+           border-bottom: 1vw solid $beige; 
+           box-sizing: border-box;
+           text-align: center; line-height: 5vw;
+           color: #fff; font-weight: bold;
+           font-size: 1.5em;}
+        #news_01{width: 100%; height: auto;
+                 margin: 6vw 0;
+            img{width: 100%; display: block;}
+            p{width: 100%; height: auto; 
+            padding: 10px; box-sizing: border-box;}
+            p:first-of-type{font-size: 1.5em; font-weight: bold; color: $baseBeige;
+            border-bottom: 1px solid $baseBeige;
+            }
+            p:last-of-type{font-size: 1.3em; font-weight: normal; color: $baseBeige;}
+        }
+        #news_02{width: 100%; height: auto;
+                 margin-bottom: 6vw;
+            img{width: 100%; display: block;}
+            p{width: 100%; height: auto; 
+            padding: 10px; box-sizing: border-box;}
+            p:first-of-type{font-size: 1.5em; font-weight: bold; color: $baseBeige;
+            border-bottom: 1px solid $baseBeige;
+            }
+            p:last-of-type{font-size: 1.3em; font-weight: normal; color: $baseBeige;}
+        }
+        #news_03{width: 100%; height: auto;
+                 margin-bottom: 6vw;
+            img{width: 100%; display: block;}
+            p{width: 100%; height: auto; 
+            padding: 10px; box-sizing: border-box;}
+            p:first-of-type{font-size: 1.5em; font-weight: bold; color: $baseBeige;
+            border-bottom: 1px solid $baseBeige;
+            }
+            p:last-of-type{font-size: 1.3em; font-weight: normal; color: $baseBeige;}
+        }
+    }// #news
+    #top{display: none;}
+    #webFoot{
+        width: 100%; height: 180px;
+        background-color: $brown02;
+        padding-top: 20px;
+        position: relative;
+        #copyright{width: 100%; height: 30px; display: block;
+                   padding: 5px; box-sizing: border-box;
+                   position: absolute; z-index: 100; top: 120px;
+                   text-align: center; 
+                   font-size: 1rem; font-weight: bold; color: #fff;
+        }
+        #adressBox{width: 100%;
+            address,p:first-of-type{display: none;}
+        }
+        #sns{width: 100%; height: 100%; min-height: 80px; margin-top: 15px;
+            ul{width: 100%; height: 100%;
+                li{width: 25%; min-width: 50px; height: 100%;
+                   min-height: 50px;
+                   padding: 1vw;
+                   box-sizing: border-box;
+                   font-size: 3.9rem;
+                   text-align: center;
+                   line-height: 100px;
+                   float: left;
+                    a{width: 100%; height: 100%;
+                      display: block;
+                      color: #fff;}
+                    span{width: 0; height: 0;
+                         display: block;
+                         overflow: hidden;}
+                }// li
+            }// ul
+        }// #sns
+    }// #webFoot
+}// mobile

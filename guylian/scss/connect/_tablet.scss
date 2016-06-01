@@ -1,0 +1,236 @@
+// tablet.scss
+
+/*------------------tablet-------------------*/
+@media screen and (max-width: 768px) and (min-width: 480px){
+    #container{width: 100%; height: auto; overflow: hidden;        
+         background-image: url(../img/tab_back.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-attachment: fixed;
+         background-position: center center;}
+    #webHead{
+        width: 100%; height: 155px;
+        background-color: $baseBeige;
+        position: relative;
+        #gnb{width: calc(26% - 14px); height: 30px; 
+             margin-left: 74%;
+             margin-bottom: 6px;
+             padding-top: 8px;
+             padding-right: 10px;   
+            h2, span, legend, label{width: 0; height: 0; 
+                display: block; overflow: hidden;}
+            form{width: 100%; max-width: 200px; height: 100%; 
+                 transition: all 0.5s;
+                fieldset{width: 100%; height: 100%;}
+                #search{width: 80%; height: 30px; 
+                      border: 0;
+                      border-bottom:2px solid $brown02;
+                      box-sizing: border-box;
+                      display: block;
+                      float: left;
+                      font-size: 1rem;
+                      }
+                input{font-size: 1.5rem;}
+                .fa-search{width: 20%; height: 30px;
+                           display: block;
+                           color: #fff; font-weight: bold;
+                           text-align: center; line-height: 30px;
+                           background-color: $brown02; 
+                           float: left;}
+            }// form
+        }// #gnb
+        
+        #nav{width: 100%;
+             height: 100px;/*130px*/ 
+             margin-top: 18px;
+             padding-top: 50px;
+             box-sizing: border-box;
+             background-color: #fff;
+            h1{width: 50%; height: 70px;
+               margin: 10px 0 0;
+               float: left;
+               position: absolute;
+               z-index: 100; top: 15px;
+               left: calc(25%);
+                a{width: 100%; height: 100%; display: block;
+                  background-repeat: no-repeat;
+                  background-position: top center;
+                  background-size: contain; 
+                  background-image: url("../img/index/header/Logo_tab.png");
+                  overflow: hidden;
+                }// a
+               }// h1
+            .top{width: 100%; height: 0; display: block;}
+            .fix{position: fixed; top: 0; z-index: 200;}
+            .main{width: 100%; height: 50px; 
+               float: left;
+               padding: 10px 20px 0;
+               border-bottom: 8px solid $brown01;
+               box-sizing: border-box;
+               background-color: #fff;
+                li{width: calc(25% - 10px); height: 100%;
+                   margin: 0 5px;
+                   /*padding-bottom: 10px; box-sizing: border-box; */float: left;
+                    &:hover{background-color: $brown01;     border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                        a{color: #fff;}
+                    }
+                    &:active{background-color: $brown01;      border-top-left-radius: 6px;
+                         border-top-right-radius: 6px;
+                        a{color: #fff;}
+                    }
+                    a{width: 100%; height: 100%; display: block;
+                      font-weight: bold; font-size: 1.2rem; color: $brown01; 
+                      text-align: center; line-height: 50px;
+                        &:hover{color: #fff;}
+                    }// a
+                    span{width: 0; height: 0;
+                    display: block; overflow: hidden;}
+                    &.on{background-color: $brown01; border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                        a{color: #fff;}
+                    }
+                }// li
+            }// ul
+        }// #nav
+    }// #webHead
+    
+    #subTitle{
+       width: 100%; height: 15vw; 
+       transition: all 0.5s ease;
+        h3{width: 100%; height: 100%; text-align: left; text-indent: 10vw;  
+           font-size: 5.5vw; 
+            a{width: 100%; height: 100%; display: block; 
+              color: #fff; font-weight: bold;
+              line-height: 28vw;
+              background-size: cover; transition: all 0.5s ease-in;
+              text-shadow: 1px 2px 4px rgba(#555, 0.5);
+              }// a
+        }// h3      
+    }// #subTitle
+    #content{
+        #content_01{
+            width: 100%; height: auto;
+            padding-bottom: 12vw;
+            background-color: rgba(#fff, 0.6);
+            h4{width: 40vw; height: 15vw; display: block;
+               margin: 0 auto;
+               padding-top: 8vw; padding-bottom: 2vw;
+               border-bottom: 1vw solid $brown02; 
+               box-sizing: border-box;
+               text-align: center; line-height: 5vw;
+               color: $brown02; font-weight: bold;
+               font-size: 1.5em;
+            }// h4
+            #contact{width: calc(100%-20vw); height: auto;
+                     margin: 6vw 10vw 0; 
+                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+                h5{width: 100%; height: 15vw;
+                   display: block; 
+                   font-size: 1.3em; font-weight: bold;
+                   color: #fff; text-align: center; 
+                   line-height: 15vw; 
+                   border: 0.1vw solid #B09798;
+                   border-bottom: 0;
+                   box-sizing: border-box;
+                   background-color: rgba($brown01, 0.8);
+                    &:last-of-type{border-bottom: 0.1vw solid #B09798;}
+                }// h5
+                h5.on{border-bottom: 1.5vw solid $beige;
+                box-sizing: border-box;}
+                div{width: 100%; height: auto;
+                    padding: 4vw 3vw;
+                    box-sizing: border-box;
+                    address, p{width: 100%; height: auto; 
+                        display: block;
+                        font-size: 1.1em; color: $brown01;
+                        }
+                }
+            }// #contact
+        }// #content_01
+        #content_02{
+            width: 100%; height: auto;
+            padding-bottom: 15vw;
+            border-top: 0.1vw solid $brown01;
+            box-sizing: border-box;
+            background-color: rgba($brown01, 0.8);
+            h4{width: 40vw; height: 15vw; display: block;
+               margin: 0 auto;
+               padding-top: 8vw; padding-bottom: 2vw;
+               border-bottom: 1vw solid $beige; 
+               box-sizing: border-box;
+               text-align: center; line-height: 5vw;
+               color: #fff; font-weight: bold;
+               font-size: 1.5em;
+            }// h4
+            p{width: 100%; height: auto; display: block;
+              padding: 4vw; text-indent: 1em;
+              box-sizing: border-box;
+              color: #fff; font-size: 1.2rem;
+                &:first-of-type{font-weight: bold; padding-top: 6vw;}
+            }
+            form{width: 100%; height: 18vw; 
+                transition: all 0.5s;
+                legend, label{display: none;}
+                #email{width: 70%; height: 8vw;
+                       margin: 0 15%;
+                       font-size: 1.3em; font-weight: bold;
+                       text-align: center;
+                }
+                #submit{width: 26%; height: 8vw;
+                        margin: 2vw 37% 0;
+                        font-size: 1.8em; font-weight: bold;
+                        color: #fff;
+                        background-color: $gray01;                        
+                    &:hover{color: $brown02;
+                    background-color: $beige;
+                    }
+                }
+            }
+            
+        }// #content_02
+    }// #content
+    #top{display: none;}
+    #webFoot{ 
+        width: 100%; height: 26.04vw;/*200px*/
+        background-color: $brown01;
+        padding-top: 3.5vw; 
+        position: relative;
+        #footBox{width: 100%; height: 100%;}
+        #adressBox{width: 100%; height: 100%; 
+        background-color: $brown01; float: left;
+            h2{width: 40%; height: 10.41vw;/*80px*/
+            margin-left: 0; margin-top: 3.5vw;
+                a{width: 100%; height: 100%; display: block;
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  background-size: contain;
+                  background-image: url("../img/index/header/Logo_tab.png");}
+            }// h2
+            address, p:first-of-type{display: none;}
+            #copyright{width: 100%; height: 2.604vw;
+                       display: block; 
+                       margin-top: 3.5vw; 
+                       text-align: center; line-height: 2.604vw;
+                       font-size: 1.2rem;
+                       color: #fff; 
+            }// #copyright
+        }// #adressBox
+        #sns{width: calc(60% - 4vw); height: 9vw; float: right;
+            padding: 3.5vw 2vw 2vw;
+            position: absolute; z-index: 100;
+            top: 4.8vw; right: 0;
+            ul{width: 100%; height: 100%;
+                li{width: 9vw; height: 9vw;
+                   margin-left: 3vw; float: left;
+                   font-weight: bold; font-size: 8.5vw;
+                   text-align: center; 
+                   line-height: 9vw;
+                    a{width: 100%; height: 100%; display: block; color: #fff;}
+                }// li
+            }// ul
+        }// #sns
+        #footMenu{display: none;}// #footMenu
+        
+    }// #webFoot
+}// tablet

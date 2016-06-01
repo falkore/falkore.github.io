@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,mBAAmB",
+"sources": ["../../scss/lib/basic.scss"],
+"names": [],
+"file": "basic.css"
+}

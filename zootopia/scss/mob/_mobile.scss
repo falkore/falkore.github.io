@@ -1,0 +1,283 @@
+// mobile.scss 
+
+@import "../_basic.scss"; 
+
+@media screen and (max-width: 480px){
+    body{width: 100vw; height: auto;
+    background-image: url("../img/index/zootopia-mob.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    }
+    #container{width: 100vw; height: auto; margin: 0 auto;}
+    .box{
+        p, strong, span{text-shadow: 2px 2px 2px #333;}
+    }
+    
+    #web_head{width: 100%; height: 13vw;/*60px*/
+        background-color: rgba(#777, 0.6);
+        position: fixed;
+        h1{width: 30%; height: 8.333vw/*40px*/; min-height: 20px; 
+           padding-top: 2.5vw;
+           padding-left: 2vw; float: left;
+            >a{width: 100%; height: 100%; display: block; 
+               background-image: url("../img/header/logo.png"); 
+               //background-attachment: fixed;
+               background-repeat: no-repeat; 
+               background-position: center center;
+               background-size: contain;
+            }// a   
+            >span{width: 0; height: 0; display: none; overflow: hidden;}
+        }// h1
+        #gnb{width: 8.333vw; min-width: 20px;
+             height: 8.333vw; min-height: 20px;
+             margin-right: 3vw;
+             padding-top: 3vw;
+             padding-right: 2vw; float: right;
+             font-size: 1.9em;
+             transition: all 0.5s;
+            i{width: 100%; height: 100%; display: block; color: #fff;
+              text-align: center; line-height: 8.333vw;}
+            span{display: none;}
+            ul{opacity: 0; width: 50vw;
+               height: 100vh; 
+               position: absolute; 
+               top: 13vw; left: 100%;
+               padding: 8vw 4vw;
+               box-sizing: border-box;
+               background-color: rgba(#333, 0.7);
+               transition: all 0.5s;
+            
+            }
+            ul.click{opacity: 1; left: 50%;}
+            li{width: 100%; height: 20vw;
+               margin-bottom: 8vw;
+               border: 1vw solid rgba(#fff,0.6);
+                &:first-child{margin-top: 3vw;}
+                &:last-child{margin-bottom: 0;}
+                a{width: 100%; height: 100%; display: block;
+                    span{width: 100%; height: 100%; display: block;
+                         font-size: 0.7em;
+                         color: #fff; font-weight: bold;
+                         text-align: center; line-height: 20vw;
+                         text-shadow: 2px 2px 2px #555;
+                    }
+                }// a
+                &:nth-child(1){
+                        >a{width: 100%; height: 100%; display: block;
+                          background-image: url(../img/judy/judy_icon.png);
+                          background-repeat: no-repeat;
+                          background-position: center -8.333vw;
+                          background-size: cover;}
+                    }// 1
+                    &:nth-child(2){
+                        >a{width: 100%; height: 100%; display: block;
+                          background-image: url(../img/nick/nick_01.jpg);
+                          background-repeat: no-repeat;
+                          background-position: center center;
+                          background-size: cover;}
+                    }// 2
+                    &:nth-child(3){
+                        >a{width: 100%; height: 100%; display: block;
+                          background-image: url(../img/finnick/finnick_icon.png);
+                          background-repeat: no-repeat;
+                          background-position: center center;
+                          background-size: cover;}
+                    }// 3
+                    &:nth-child(4){
+                        >a{width: 100%; height: 100%; display: block;
+                          background-image: url(../img/index/zootopia_icon.png);
+                          background-repeat: no-repeat;
+                          background-position: center center;
+                          background-size: cover;}
+                        span{background-color: rgba(#333, 0.5);}
+                    }// 4
+            }// li
+        }// #gnb
+    }// #web_head
+    .content_03{display: none;} 
+    #trailer{display: none;} 
+    #line_01{width: 100%; height: 13vw/*60px*/; background-color: rgba(#91DB60, 0.6);}
+    #line_02{width: 100%; height: 13vw/*60px*/; background-color: rgba(#79f, 0.6);}
+    #line_03{width: 100%; height: 13vw/*60px*/; background-color: rgba(#5df, 0.6);}
+    #line_04{width: 100%; height: 13vw/*60px*/; background-color: rgba(#f8a, 0.6);}
+    #box_01{width: 100%; height: auto;/*1125px*/  
+        .content_01{width: 100%; height: 70vh;/*119vw*/ 
+            h2{width: 100%;/*250px*/ height: 8vh;/*15vw*/ 
+               padding: 20vh 0 12vh;/*30vw 0 20vw*/
+                 >a{width: 100%; height: 100%; display: block; 
+                background-image: url("../img/index/con_01/zootopia_logo.png"); 
+                background-repeat: no-repeat;
+                //background-attachment: fixed;
+                background-position: center center;
+                background-size: contain;}// a
+                >span{width: 0; height: 0; display: none; overflow: hidden;}
+            }// h2 
+            #article_01{width: calc(100% - 8vw); height: calc(25vh - 8vw);/*50vw*/
+                        padding: 4vw;/*50px 20px 10px*/ 
+                        background-color: rgba(#333, 0.3);
+                        overflow: hidden;
+                p{width: 100%; height: 100%; 
+                  color: #fff; font-size: 1.2rem;  
+                  overflow: scroll; text-indent: 0.5em;
+                  padding-right: 1000px;
+                  padding-bottom: 1000px;}
+            }// #article_01
+        }// #content_01
+        .content_02{width: 100%; height: 30vh;/*54vw*/
+                    padding: 1vh 0;
+            ul{width: 100%; height: 50vw;
+                li{width: 50%; height: 14vh; float: left;
+                   span{width: 100%; height: 100%; display: block;
+                        background-color: rgba(#333, 0.2);
+                        font-size: 1.5rem;
+                        color: #fff; text-align: center; 
+                        line-height: 25vw; border: 2vw solid rgba(#fff, 0.5);/*10px*/
+                        box-sizing: border-box;
+                    }// span
+                    &:nth-child(1){
+                        >a{width: 100%; height: 100%; display: block;
+                          background-image: url(../img/judy/judy_icon.png);
+                          background-repeat: no-repeat;
+                          background-position: center -8.333vw;
+                          background-size: cover;}
+                    }// 1
+                    &:nth-child(2){
+                        >a{width: 100%; height: 100%; display: block;
+                          background-image: url(../img/nick/nick_01.jpg);
+                          background-repeat: no-repeat;
+                          background-position: center center;
+                          background-size: cover;}
+                    }// 2
+                    &:nth-child(3){
+                        >a{width: 100%; height: 100%; display: block;
+                          background-image: url(../img/finnick/finnick_icon.png);
+                          background-repeat: no-repeat;
+                          background-position: center center;
+                          background-size: cover;}
+                    }// 3
+                    &:nth-child(4){
+                        >a{width: 100%; height: 100%; display: block;
+                          background-image: url(../img/index/zootopia_icon.png);
+                          background-repeat: no-repeat;
+                          background-position: center center;
+                          background-size: cover;}
+                        span{background-color: rgba(#333, 0.5);}
+                    }// 4
+                }// li
+            }// ul
+        }// #content_02
+    }// #box_01
+    #box_02{width: 100%; height: auto/*500px*/; background-color: rgba(#22a, 0.5);
+        .content_01{width: 100%; height: 100%; overflow: hidden;
+            #article_02{
+                h3{width: 100%; height: 65vh; 
+                   background-image: url(../img/judy/judy_02.jpg);
+                   background-repeat: no-repeat;
+                   background-position: 70% 6%;
+                   background-size: cover;}// h3
+                p{
+                  strong{font-weight: bold; font-size: 1.35rem;
+                         color: #fff;}
+                         width: calc(100% - 8vw); height: calc(35vh - 21vw)/*200px*/;
+                         margin: 4vw/*10px 20px*/;
+                         padding-right: 1000px;
+                         padding-bottom: 1000px;
+                         color: #fff; font-size: 1.2rem;
+                         overflow: scroll;
+                }// p
+                }
+        }// .content_01
+        .content_02{display: none;}// .content_02
+    }// #box_02
+    #box_03{width: 100%; height: auto/*450px*/;
+        background-color: rgba(#f06, 0.5);
+        .content_01{width: 100%; height: 100%; overflow: hidden;
+            #article_03{
+                h3{width: 100%; height: 65vh/*300px*/; 
+                   background-image: url(../img/nick/nick-wilde.jpg);
+                   background-repeat: no-repeat;
+                   background-position: 70% 30%;
+                   background-size: cover;}// h3
+                p{
+                  strong{font-weight: bold; font-size: 1.35rem;
+                         color: #fff;}
+                         width: calc(100% - 8vw); height: calc(35vh - 21vw)/*200px*/;
+                         margin: 4vw/*10px 20px*/;
+                         padding-right: 1000px;
+                         padding-bottom: 1000px;
+                         color: #fff; font-size: 1.2rem;
+                         overflow: scroll;
+                }// p
+                }
+        }// .content_01
+        .content_02{display: none;}// .content_02
+    }// #box_02
+    #box_04{width: 100%; height: auto/*450px*/; 
+        background-color: rgba(#151, 0.5);
+        .content_01{width: 100%; height: 100%; overflow: hidden;
+            #article_04{
+                h3{width: 100%; height: 65vh/*300px*/; 
+                   background-image: url(../img/gallery/gallery_11.jpg);
+                   background-repeat: no-repeat;
+                   background-position: 30% 30%;
+                   background-size: cover;}// h3
+                p{
+                  strong{font-weight: bold; font-size: 1.35rem;
+                         color: #fff;}
+                         width: calc(100% - 8vw); height: calc(35vh - 21vw)/*200px*/;
+                         margin: 4vw/*10px 20px*/;
+                         padding-right: 1000px;
+                         padding-bottom: 1000px;
+                         color: #fff; font-size: 1.2rem;
+                         overflow: scroll;
+                }// p
+                }
+        }// .content_01
+        .content_02{display: none;}// .content_02
+    }// #box_02
+    #box_05{width: 100%; height: auto/*650px*/;
+        background-color: rgba(#333, 0.5);
+        .content_01{width: 100%; height: 60vh/*250px*/;
+            overflow: hidden;
+            h2{width: 100%; height: 10vh/*50px*/; margin: 0 auto;
+                a{width: 100%; height: 100%; display: block;}
+                span{width: auto; height: 100%; display: block;
+                text-align: center; line-height: 10vh/*50px*/;
+                color: #fff; font-size: 1.4rem; font-weight: bold;}
+            }// h2
+            #gallery_box{
+                width: 100%; height: auto;
+            }
+        }// .content_01
+        .gallery{width: 100%; height: calc(40vh - 13vw)/*200px*/;
+            ul{width: 100%; height: 100%; overflow: hidden;
+                li{width: calc(100% / 6); height: 50%; float: left;
+                    a{width: 100%; height: 100%; display: block; 
+                      overflow: hidden; border: 0.5vw solid #fff;
+                      box-sizing: border-box;}
+                    img{height: 100%;}
+                }// li
+            }// ul
+        }// .gallery
+    }// #box_05
+    #web_foot{width: 100%; height: 20.83vw;/*100px*/
+        background-color: rgba(#fff, 0.6);
+        border-top: 12.5vw/*60px*/ solid rgba(#fff, 0.6);
+        h2{display: none;
+        }// h2
+        #info_box{width: calc(100% - 8vw); height: 12.5vw;/*60px*/ 
+            padding: 4vw; float: left; 
+            p{width: 100%; height: 6.25vw; color: #333;
+              font-size: 0.9rem;
+              line-height: 6.25vw;
+              text-align: center; 
+                strong{font-weight: bold; 
+                       font-size: 1rem;
+                       color: #333;
+                       line-height: 6.25vw;}
+            }
+        }
+    }// #web_foot
+}// mobile.scss

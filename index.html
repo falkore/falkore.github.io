@@ -3,84 +3,100 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <link rel="apple-touch-icon" href="./img/favi_h.png" />
     <link rel="shortcut icon" type="image/x-icon" href="./img/favi_h.png" />
-    <link rel="stylesheet" href="./font-awesome/font-awesome-4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/library/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <!--[if lte IE 9]>
-    <script src="./js/dist/html5shiv.min.js"></script>
-    <script src="./js/dist/ie9.min.js"></script>
-    <script src="./js/dist/PIE.js"></script>        
-    <![endif]-->
     <script src="./js/jquery/jquery-1.12.2.min.js"></script>
     <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
     <script src="./js/jquery/jquery-ui.min.js"></script>
-    <title>Hae Jeung's Portfolio</title>
-    <style>
-        .con_01:hover{margin-left: -50%;
-        transition: all 1s linear;
-        }
-        .con_01:hover ~ .con_02 {margin-left: -50%;
-        }
-        /*.con_01:active ~ .con_02{margin-left: -50%;}*/
-    </style>
-    <script>
-
-    </script>
+    <script src="./js/js/jquery/prefixfree.min.js"></script>
+    <script src="https://use.fontawesome.com/daf4cd64c9.js"></script>
+    <script src="./js/index.js"></script>
+    <!--[if lte IE 6]>
+        <script src="./js/dist/html5shiv.min.js"></script>
+        <script src="./js/dist/ie9.min.js"></script>
+        <script src="./js/dist/PIE.js"></script>
+        <script src="./js/dist/respond.min.js"></script>
+    <![endif]-->
+    <title>HAEJEUNG LEE</title>
+    <style></style>
+    <script></script>    
 </head>
 <body>
-    <div id="wrap">
+    <div id="container">
+       <div id="wrap">
         <header id="web_head">
-           <div class="cover">
-            <h1><a href="#">이 혜 정</a></h1>
-            <div id="gnb">
+            <h1>
+              <a href="index.html">
+                <strong>이혜정</strong>
+                <span>HAEJEUNG LEE</span>
+              </a>
+            </h1>
+            <div id="nav">
+              <h3>
+                  <i class="fa fa-plus-square" aria-hidden="true"></i>
+                  <span>Main menu</span>
+              </h3>
                 <ul>
-                    <li>                    
-                    <a href="resume.html" target="_blank">Resume</a>
-                    </li>
-                    <li><a href="./portfolio/guylian/index.html" target="_blank">Project 1</a></li>
-                    <li><a href="./portfolio/showbox/index.html" target="_blank">Project 2</a></li>
-                    <li><a href="#">Contact</a></li>
+                  <li class="on">
+                    <a href="index.html" target="_self"> 
+                      <span>HOME</span> 
+                    </a>         
+                  </li>
+                  <li>
+                    <a href="resume.html" target="_self">
+                      <span>RESUME</span>
+                    </a>        
+                  </li>
+                  <li>
+                    <a href="portfolio.html" target="_self">
+                      <span>PORTFOLIO</span>
+                    </a>        
+                  </li>
+                  <li>
+                    <a href="contact.html" target="_self">
+                      <span>CONTACT</span>
+                    </a>        
+                  </li>
                 </ul>
-            </div><!--// #gnb-->
-            </div><!--// .cover-->
+            </div><!--// #nav-->
         </header><!--// #web_head-->
-        <article id="container">
-            <h2>메인 메뉴</h2>
-            <nav>
-                <ul>
-                    <li><a href="resume.html" target="_blank">ABOUT ME</a></li>
-                    <li>
-                      <a href="http://annie1202.dothome.co.kr/zootopia/rwd_index.html" target="_blank">
-                        <span>Project 1</span>
-                      </a>
-                      <a href="./portfolio/showbox/index.html" target="_blank">
-                        <span>Project 2</span>
-                      </a>
-                    </li>
-                    <li id-="con">
-                      <ul>
-                          <li class="con con_01">CONTACT</li>
-                          <li class="con con_02">
-                              <p>Mobile: 010-7140-8318</p>
-                              <p>Email : annie_1202@naver.com</p>
-                              <p>Web   : https://falkore.dothome.co.kr</p>
-                              <p>git   : https://github.com/falkore</p>
-                          </li>
-                      </ul>
-                    </li>
-                </ul>
-                
-            </nav>
-        </article><!--// #container-->
+        <section id="content">
+            <h4>Website's contents</h4>
+            <article id="content_01">
+              <h5>ABOUT ME</h5> 
+              <a href="resume.html" target="_self">
+                <span class="fa fa-plus-circle plus" aria-hidden="true">
+                </span> 
+              </a>  
+            </article>
+            <article id="content_02">
+              <h5>PORTFOLIO</h5> 
+              <a href="portfolio.html" target="_self">
+                <span class="fa fa-plus-circle plus" aria-hidden="true">
+                </span> 
+              </a> 
+            </article>
+            <article id="content_03">
+              <h5>CONTACT ME</h5>  
+              <a href="contact.html" target="_self">
+                <span class="fa fa-plus-circle plus" aria-hidden="true">
+                </span> 
+              </a>  
+            </article>
+        </section><!--// #content-->
         <footer id="web_foot">
-            <h2>웹사이트 기본 정보</h2>
-            <div id="info_box">
-                <p>Copyright 2016 Haejeung Lee. All rights reserved.</p>
-            </div>
+          <h2>Website's information</h2>
+          <p>Copyright 2016 Haejeung Lee. All Rights Reserved.</p>   
+           <p>
+    <a href="https://validator.kldp.org/check?uri=referer"
+      onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
+      src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
+          </p> 
         </footer><!--// #web_foot-->
-    </div><!--// #wrap-->
+       </div><!--// #wrap-->
+    </div><!--// #container-->
 </body>
 </html>

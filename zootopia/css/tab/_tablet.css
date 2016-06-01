@@ -1,0 +1,390 @@
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    position: relative;
+  }
+  body {
+    width: 100vw;
+    height: auto;
+    background-image: url("../img/index/zootopia_tab.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+  #container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #web_head {
+    width: 100%;
+    height: 9.114vw;
+    /*70px*/
+    background-color: rgba(51, 51, 51, 0.4);
+  }
+  #web_head h1 {
+    width: 32.552%;
+    /*250px*/
+    height: 5.208vw;
+    min-height: 20px;
+    margin: 0 auto;
+    padding-top: 2.604vw;
+    /*20px*/
+    float: right;
+  }
+  #web_head h1 > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url("../img/header/logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  #web_head h1 > span {
+    width: 0;
+    height: 0;
+    display: none;
+    overflow: hidden;
+  }
+  .content_03 {
+    display: none;
+  }
+  #trailer {
+    width: 100%;
+    height: 41vw;
+    overflow: hidden;
+  }
+  #trailer img {
+    width: 100%;
+  }
+  #box_01 {
+    width: 100%;
+    height: auto;
+    /*1150px*/
+    background-color: rgba(51, 51, 51, 0.4);
+  }
+  #box_01 .content_01 {
+    width: 100%;
+    height: auto;
+    /*600px*/
+  }
+  #box_01 .content_01 h2 {
+    width: 45.57%;
+    /*350px*/
+    height: 14.32vw;
+    /*110px*/
+    min-height: 3.906vw;
+    /*30px*/
+    margin: 0 auto;
+  }
+  #box_01 .content_01 h2 > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url("../img/index/con_01/zootopia_logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  #box_01 .content_01 h2 > span {
+    width: 0;
+    height: 0;
+    display: none;
+    overflow: hidden;
+  }
+  #box_01 .content_01 #article_01 {
+    width: 97.396%;
+    height: 26.41vw;
+    /*230px*/
+    margin: 10.41vw 0 6.61vw;
+    /*80px 0 10px*/
+    padding: 2.604vw;
+    overflow: hidden;
+  }
+  #box_01 .content_01 #article_01 p {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    overflow: scroll;
+    padding-right: 1000px;
+    padding-bottom: 1000px;
+  }
+  #box_01 .content_02 {
+    width: 100%;
+    height: 31.349vw;
+    /*190px*/
+  }
+  #box_01 .content_02 ul {
+    width: calc(100% - 40px);
+    height: 19.531vw;
+    /*150px*/
+    padding: 2.604vw;
+    /*20px*/
+    margin-bottom: 6.61vw;
+  }
+  #box_01 .content_02 ul li {
+    width: 19.531vw;
+    /*155px*/
+    height: 100%;
+    float: left;
+    margin-right: 4.558vw;
+    /*35px*/
+  }
+  #box_01 .content_02 ul li:last-of-type {
+    margin-right: 0;
+  }
+  #box_01 .content_02 ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    border: 0.65vw solid #fff;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  #box_01 .content_02 ul li:nth-of-type(1) > a {
+    background-image: url(../img/judy/judy_icon.png);
+  }
+  #box_01 .content_02 ul li:nth-of-type(2) > a {
+    background-image: url(../img/nick/nick_icon.png);
+  }
+  #box_01 .content_02 ul li:nth-of-type(3) > a {
+    background-image: url(../img/finnick/finnick_icon.png);
+  }
+  #box_01 .content_02 ul li:nth-of-type(4) > a {
+    background-image: url(../img/index/zootopia_icon.png);
+  }
+  #box_02 {
+    width: 100%;
+    height: 100.26vw;
+    /*770px*/
+    background-color: rgba(34, 34, 170, 0.5);
+    border-top: 3.906vw solid #91DB60;
+    border-bottom: 3.906vw solid #f0a;
+  }
+  #box_02 .content_01 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #box_02 .content_01 #article_02 h3 {
+    width: 100%;
+    height: 52.083vw;
+    background-image: url(../img/judy/judy_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 70% 6%;
+    background-size: cover;
+  }
+  #box_02 .content_01 #article_02 p {
+    width: calc(100% - 40px);
+    height: 33.854vw;
+    margin: 1.302vw 2.604vw;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  #box_02 .content_01 #article_02 p strong {
+    width: 100%;
+    height: 10.41vw;
+    /*50px*/
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 10.41vw;
+  }
+  #box_02 .content_02 {
+    display: none;
+  }
+  #box_03 {
+    width: 100%;
+    height: 93.75vw;
+    /*720px*/
+    background-color: rgba(170, 51, 170, 0.5);
+    border-bottom: 3.906vw solid #79f;
+  }
+  #box_03 .content_01 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #box_03 .content_01 #article_03 h3 {
+    width: 100%;
+    height: 52.083vw;
+    background-image: url(../img/nick/nick-wilde.jpg);
+    background-repeat: no-repeat;
+    background-position: 70% 30%;
+    background-size: cover;
+  }
+  #box_03 .content_01 #article_03 p {
+    width: calc(100% - 40px);
+    height: 26.04vw;
+    margin: 1.302vw 2.604vw;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  #box_03 .content_01 #article_03 p strong {
+    width: 100%;
+    height: 10.41vw;
+    /*50px*/
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 10.41vw;
+  }
+  #box_03 .content_02 {
+    display: none;
+  }
+  #box_04 {
+    width: 100%;
+    height: 93.75vw;
+    /*720px*/
+    background-color: rgba(17, 85, 17, 0.5);
+    border-bottom: 3.906vw solid #5df;
+  }
+  #box_04 .content_01 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #box_04 .content_01 #article_04 h3 {
+    width: 100%;
+    height: 52.083vw;
+    background-image: url(../img/gallery/gallery_11.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+  }
+  #box_04 .content_01 #article_04 p {
+    width: calc(100% - 40px);
+    height: 26.04vw;
+    margin: 1.302vw 2.604vw;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  #box_04 .content_01 #article_04 p strong {
+    width: 100%;
+    height: 10.41vw;
+    /*50px*/
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 10.41vw;
+  }
+  #box_04 .content_02 {
+    display: none;
+  }
+  #box_05 {
+    width: 100%;
+    height: auto;
+    background-color: rgba(51, 51, 51, 0.6);
+  }
+  #box_05 .content_01 {
+    width: 100%;
+    height: 72.39vw;
+    padding: 3vw 0;
+    overflow: hidden;
+  }
+  #box_05 .content_01 h2 {
+    width: 100%;
+    height: 10.416vw;
+    margin: 0 auto;
+  }
+  #box_05 .content_01 h2 a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  #box_05 .content_01 h2 span {
+    width: auto;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 10.416vw;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  #box_05 .content_01 #gallery_box {
+    width: 100%;
+    height: 65.104vw;
+  }
+  #box_05 .content_01 #gallery_box img {
+    width: auto;
+    height: 100%;
+  }
+  #box_05 .gallery {
+    width: 100%;
+    height: 39.0625vw;
+    margin: 1.953vw 0;
+  }
+  #box_05 .gallery ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #box_05 .gallery ul li {
+    width: calc(100% / 6);
+    height: 50%;
+    float: left;
+  }
+  #box_05 .gallery ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+  }
+  #box_05 .gallery ul li img {
+    height: 100%;
+  }
+  #web_foot {
+    width: 100%;
+    height: 20.83vw;
+    /*100px*/
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  #web_foot h2 {
+    width: 20%;
+    height: 8.333vw;
+    min-height: 20px;
+    margin-top: 5.208vw;
+    margin-left: 4.166vw;
+    float: left;
+    background-image: url(../img/footer/disney_logo.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #web_foot #info_box {
+    width: calc(70% - 15vw);
+    height: 12.5vw;
+    /*60px*/
+    margin-right: 5.208vw;
+    padding-top: 4vw;
+    padding-left: 15vw;
+    float: right;
+  }
+  #web_foot #info_box p {
+    width: 100%;
+    height: 6.25vw;
+    color: #333;
+    font-size: 0.875rem;
+    line-height: 6.25vw;
+  }
+  #web_foot #info_box p strong {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    line-height: 6.25vw;
+  }
+}

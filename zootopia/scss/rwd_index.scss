@@ -1,0 +1,14 @@
+// index.scss
+
+@import '_basic.scss'; 
+@import './mob/_mobile.scss';
+@import './tab/_tablet.scss';
+@import './pc/_pc.scss';
+//@import './pc_full/_pc_full.scss'; 
+
+.box{transition: all 0.5s; animation: scale 1s 1;}
+
+@keyframes scale{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+} 

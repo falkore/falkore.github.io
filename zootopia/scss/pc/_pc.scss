@@ -1,0 +1,481 @@
+// pc.scss
+
+@media screen and (min-width: 769px) /*and (max-width: 1024px)*/{
+    body{position: relative;
+            background-image: url("../img/index/zootopia.jpg"); 
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;}
+    /*#box_01{background-image: url("../img/index/zootopia.jpg"); 
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;}*/
+    #trailer{width: 100%; height: 41vw; overflow: hidden;
+        border-top: 7.8125vw/*30px*/ solid rgba(#91DB60, 0.6);
+        img{width: 100%;}
+    }
+    #container{width: 100%; height: auto; margin: 0 auto; padding-top: 8vw;}
+    .box{
+        p, strong, span{text-shadow: 2px 2px 2px #333;}
+    }
+    
+    #web_head{width: 100%; height: 8vw;/*80px*/
+        background-color: rgba(#333, 0.4);
+        position: relative; position: fixed; z-index: 500; top: 0;
+        h1{width: 9vw;/*100px*/ max-height: 3.9vw/*50px*/;  
+           padding-top: 2vw;
+           padding-left: 4vw; float: left;
+            >a{width: 9vw;/*100px*/ max-height: 6.835vw/*70px*/; min-height: 50px; display: block;
+               position: absolute; 
+               background-image: url("../img/header/logo.png"); 
+               background-repeat: no-repeat;
+               //background-attachment: fixed;
+               background-position: center center;
+               background-size: contain;
+               }// a
+            >span{width: 0; height: 0; display: none; overflow: hidden;}
+        }// h1 
+        #gnb{width: 50vw; height: 8vw/*30px*/; 
+             float: right; padding-right: 1vw;
+             transition: all 0.8s;
+            i{display: none;}
+            i>span{display: none;}
+            ul{width: auto; height: 100%; position: absolute; right: 0;
+               padding-right: 4vw;}
+            li{width: auto; height: 100%; margin-right: 0; 
+               margin-left: 5vw; padding-bottom: 1.5vw; box-sizing: border-box; float: left;
+                &:last-child{margin-right: 0;}
+                a{width: 100%; height: 100%; display: block;
+                    span{width: 100%; height: 100%; display: block;
+                         font-size: 1.2em; opacity: 0.85;
+                         color: #fff; font-weight: bold;
+                         text-align: center; line-height: 9vw;
+                    }
+                }// a
+            }// li
+        }// #gnb
+        #gnb li:hover a span{opacity: 1;}
+        #gnb li:nth-of-type(1):hover a span{color: #22a;}
+        #gnb li:nth-of-type(2):hover a span{color: #f45;}
+        #gnb li:nth-of-type(3):hover a span{color: #151;}
+        #gnb li:nth-of-type(4):hover a span{color: #333;}
+        
+        #gnb li.on a span{opacity: 1;}
+        #gnb li:nth-of-type(1).on a span{color: #22a;}
+        #gnb li:nth-of-type(2).on a span{color: #f45;}
+        #gnb li:nth-of-type(3).on a span{color: #151;}
+        #gnb li:nth-of-type(4).on a span{color: #333;}
+    }// #web_head 
+    #line_01{width: 100%; height: 8vw; background-color: rgba(#91DB60, 0.6);}
+    #line_02{width: 100%; height: 8vw; background-color: rgba(#79f, 0.6);}
+    #line_03{width: 100%; height: 8vw; background-color: rgba(#ff0, 0.6);}
+    #line_04{width: 100%; height: 8vw; background-color: rgba(#f0a, 0.6);}
+    #box_01{width: 100%; height: auto;/*500px*/ 
+            box-sizing: border-box;
+        #content_wrap{width: calc(48% - 3vw); height: 55vw;/*530px*/ float: left; 
+                      padding-top: 6vw; margin-left: 3vw;}
+        .content_01{width: 43.94vw;/*450px*/ height: 36vw;/*280px*/
+            h2{width: 100%;/*360px*/ height: 8vw;/*100px*/
+               padding: 2vw 0;
+                 >a{width: 100%; height: 100%; display: block;  
+                background-image: url("../img/index/con_01/zootopia_logo.png"); 
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;}// a
+                >span{width: 0; height: 0; display: none; overflow: hidden;}
+            }// h2 
+            #article_01{width: 90.476%;/*380px*/ height: 18vw;/*220px*/
+                background-color: rgba(#333, 0.4); margin: 2vw 0;/*10px 20px*/ 
+                padding: 2vw 2vw 0;
+                overflow: hidden;
+                p{width: 100%; height: 100%; display: block; overflow: scroll; padding-right: 1000px; padding-bottom: 1000px;
+                color: #fff; font-size: 1.2rem;}
+            }// #article_01
+        }// #content_01
+        .content_02{width: 50vw;/*430px*/ height: 13vw;/*140px*/
+            ul{width: 100%;/*430px*/ height: 9.76vw;/*100px*/  
+                padding: 0.976vw/*10px*/ 1vw;
+                transition: all 0.5s ease;
+                li{width: 9.76vw;/*100px*/ height: 100%; float: left; 
+                   margin-right: 1vw;/*7px*/
+                    &:last-of-type{margin-right: 0;}
+                    a{width: 100%; height: 100%;  display: block;
+                     border-radius: 50%;
+                     border: 0.5vw solid #fff;
+                     box-sizing: border-box;
+                     background-repeat: no-repeat;
+                     background-position: center center;
+                     background-size: cover;
+                        transition: all 0.5s linear;
+                        &:hover{transform: rotateY(180deg);
+                            span{width: 100%; height: 100%; display: block; color: #fff;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            text-decoration: underline;
+                            text-align: center;
+                            line-height: 10vw;
+                            text-shadow: 2px 2px 2px #333;
+                            transform: rotateY(-180deg);
+                            }
+                        }// hover
+                    }// a
+                        &:nth-of-type(1)>a{background-image: url(../img/judy/judy_icon.png);
+                    }            
+                        &:nth-of-type(2)>a{background-image: url(../img/nick/nick_01.jpg);
+                    }      
+                        &:nth-of-type(3)>a{background-image: url(../img/finnick/finnick_icon.png);
+                    }            
+                        &:nth-of-type(4)>a{background-image: url(../img/index/zootopia_icon.png); 
+                    }
+                }// li
+            }// ul
+        }// #content_02
+        .content_03{width: 34vw;/*350px*/ height: 40vw;/*400px*/
+            position: relative; margin-left: 60vw;
+            padding-top: 10vw;/*100px*/ 
+            #picture_01{width: 100%; height: 100%;
+                overflow: hidden;
+                button{position: absolute; z-index: 200; top: 29.296vw;/*3
+                    00px*/
+                    font-size: 1.25em;
+                    background-color: transparent;
+                    >i{color: #788;}
+                    >span{width: 0; height: 0; display: none; overflow: hidden;}
+                    &:nth-of-type(1){left: 0; }
+                    &:nth-of-type(2){right: 0;}
+                }
+                ul{width: 400%; height: 100%; margin-left: -100%; overflow: hidden;
+                    span{width: 0; height: 0; display: none; overflow: hidden;}
+                    li{width: 25%; height: 100%;
+                       float: left;
+                       background-repeat: no-repeat;
+                       background-position: center center;
+                       background-size: contain;
+                    }// li
+                    #slide_01{background-image: url(../img/index/poster.jpg);}
+                    #slide_02{background-image: url(../img/index/poster_01.jpg);}
+                    #slide_03{background-image: url(../img/index/zootopia_poster_02.jpg);}
+                    #slide_04{background-image: url(../img/index/zootopia_poster_03.jpg);}
+                }// ul
+            }
+        }// #content_03
+    }// #box_01 
+    #box_02{width: 100%; height: auto;/*550px*/
+        padding-left: 3vw;
+        background-image: url("../img/judy/judy_back_02.jpg"); 
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        box-sizing: border-box;
+        position: relative;
+    
+        .content_01{width: 43.94vw;/*450px*/ height: 38vh;/*280px*/
+            margin-top: 10vh; float: left;
+            overflow: hidden;
+            background-color: rgba(#22a, 0.5);
+            >#article_02{width: calc(100% - 10vw); height: calc(100% - 4vw);
+                padding: 2vw 5vw;
+                
+            }
+            >#article_02 strong{width: 100%; height: 10vh; 
+                display: block;
+                font-weight: bold; font-size: 1.5rem; color: #fff;
+                text-align: center; line-height: 10vh;
+             }
+            >#article_02>p{width: 100%; height: 25vh; display: block; 
+                padding-bottom: 3vh;
+                color: #fff; font-size: 1.1rem; font-weight: bold;}
+        }// .content_01 
+        .content_02{width: 50vw;/*430px*/ height: 13vw;/*140px*/ 
+            ul{width: 100%;/*430px*/ height: 9.76vw;/*100px*/  
+                padding: 0.976vw/*10px*/ 0.8vw;
+                transition: all 0.5s ease;
+                position: absolute; top: 55vh;
+                li{width: 9.76vw;/*100px*/ height: 100%; float: left; 
+                   margin-right: 1vw;/*7px*/
+                    &:last-of-type{margin-right: 0;}
+                    a{width: 100%; height: 100%;  display: block;
+                     border-radius: 50%;
+                     border: 0.5vw solid #fff;
+                     box-sizing: border-box;
+                     background-repeat: no-repeat;
+                     background-position: center center;
+                     background-size: cover;
+                        transition: all 0.5s linear;
+                        &:hover{transform: rotateY(180deg);
+                            span{width: 100%; height: 100%; display: block; color: #fff;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            text-decoration: underline;
+                            text-align: center;
+                            line-height: 10vw;
+                            text-shadow: 2px 2px 2px #333;
+                            transform: rotateY(-180deg);
+                            }
+                        }// hover
+                    }// a
+                        &:nth-of-type(1)>a{background-image: url(../img/judy/judy_icon.png);
+                    }            
+                        &:nth-of-type(2)>a{background-image: url(../img/nick/nick_01.jpg);
+                    }      
+                        &:nth-of-type(3)>a{background-image: url(../img/finnick/finnick_icon.png);
+                    }            
+                        &:nth-of-type(4)>a{background-image: url(../img/index/zootopia_icon.png); 
+                    }
+                }// li
+            }// ul
+        }// #content_02
+        .content_03{
+            width: 34vw;/*300px*/ height: 39vw;/*400px*/
+            padding-top: 3vw;
+            padding-right: 5vw; float: right;
+            overflow: hidden;
+            #picture_02{
+            position: absolute;
+            height: 100%; top: 0; right: 0;    
+            /*background-image: url(../img/judy/judy_01.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;*/
+            }
+        }
+    }// #box_02
+    #box_03{width: 100%; height: auto;/*500px*/
+        padding-left: 3vw;
+        background-image: url("../img/nick/nick_back_01.jpg"); 
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: rgba(#a3a, 0.5);
+        box-sizing: border-box;
+        position: relative;
+        
+        .content_01{width: 43.94vw;/*450px*/ height: 38vh;/*280px*/
+            margin-top: 10vh; float: left;
+            overflow: hidden;
+            background-color: rgba(#22a, 0.5);
+            >#article_03{width: calc(100% - 10vw); height: calc(100% - 4vw);
+                padding: 2vw 5vw;
+                
+            }
+            >#article_03 strong{width: 100%; height: 10vh; 
+                display: block;
+                font-weight: bold; font-size: 1.5rem; color: #fff;
+                text-align: center; line-height: 10vh;
+             }
+            >#article_03>p{width: 100%; height: 25vh; display: block; 
+                padding-bottom: 3vh;
+                color: #fff; font-size: 1.1rem; font-weight: bold;}
+        }// .content_01 
+        .content_02{width: 50vw;/*430px*/ height: 13vw;/*140px*/ 
+            ul{width: 100%;/*430px*/ height: 9.76vw;/*100px*/  
+                padding: 0.976vw/*10px*/ 0.8vw;
+                transition: all 0.5s ease;
+                position: absolute; top: 55vh;
+                li{width: 9.76vw;/*100px*/ height: 100%; float: left; 
+                   margin-right: 1vw;/*7px*/
+                    &:last-of-type{margin-right: 0;}
+                    a{width: 100%; height: 100%;  display: block;
+                     border-radius: 50%;
+                     border: 0.5vw solid #fff;
+                     box-sizing: border-box;
+                     background-repeat: no-repeat;
+                     background-position: center center;
+                     background-size: cover;
+                        transition: all 0.5s linear;
+                        &:hover{transform: rotateY(180deg);
+                            span{width: 100%; height: 100%; display: block; color: #fff;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            text-decoration: underline;
+                            text-align: center;
+                            line-height: 10vw;
+                            text-shadow: 2px 2px 2px #333;
+                            transform: rotateY(-180deg);
+                            }
+                        }// hover
+                    }// a
+                        &:nth-of-type(1)>a{background-image: url(../img/judy/judy_icon.png);
+                    }            
+                        &:nth-of-type(2)>a{background-image: url(../img/nick/nick_01.jpg);
+                    }      
+                        &:nth-of-type(3)>a{background-image: url(../img/finnick/finnick_icon.png);
+                    }            
+                        &:nth-of-type(4)>a{background-image: url(../img/index/zootopia_icon.png); 
+                    }
+                }// li
+            }// ul
+        }// #content_02
+        .content_03{
+            width: 34vw;/*300px*/ height: 39vw;/*400px*/
+            padding-top: 3vw;
+            padding-right: 5vw; float: right;
+            overflow: hidden;
+            #picture_03{
+             position: absolute;
+            height: 100%; top: 0; right: 0;     
+            /*background-image: url(../img/nick/nick_icon.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;*/
+            }
+        }
+    }// #box_03
+        #box_04{width: 100%; height: auto;/*500px*/
+        padding-left: 3vw;
+        background-image: url("../img/finnick/finnick_back.jpg"); 
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: rgba(#151, 0.5);
+        box-sizing: border-box;
+        position: relative;
+        .content_01{width: 43.94vw;/*450px*/ height: 38vh;/*280px*/
+            position: absolute; z-index: 200; top: 0;
+            margin-top: 10vh; float: left;
+            overflow: hidden;
+            background-color: rgba(#22a, 0.5);
+            >#article_04{width: calc(100% - 10vw); height: calc(100% - 4vw);
+                padding: 2vw 5vw;
+                
+            }
+            >#article_04 strong{width: 100%; height: 10vh; 
+                display: block;
+                font-weight: bold; font-size: 1.5rem; color: #fff;
+                text-align: center; line-height: 10vh;
+             }
+            >#article_04>p{width: 100%; height: 25vh; display: block; 
+                padding-bottom: 3vh;
+                color: #fff; font-size: 1.1rem; font-weight: bold;}
+        }// .content_01 
+        .content_02{width: 50vw;/*430px*/ height: 13vw;/*140px*/ 
+            ul{width: 100%;/*430px*/ height: 9.76vw;/*100px*/  
+                padding: 0.976vw/*10px*/ 0.8vw;
+                transition: all 0.5s ease;
+                position: absolute; top: 55vh; z-index: 200;
+                li{width: 9.76vw;/*100px*/ height: 100%; float: left; 
+                   margin-right: 1vw;/*7px*/
+                    &:last-of-type{margin-right: 0;}
+                    a{width: 100%; height: 100%;  display: block;
+                     border-radius: 50%;
+                     border: 0.5vw solid #fff;
+                     box-sizing: border-box;
+                     background-repeat: no-repeat;
+                     background-position: center center;
+                     background-size: cover;
+                        transition: all 0.5s linear;
+                        &:hover{transform: rotateY(180deg);
+                            span{width: 100%; height: 100%; display: block; color: #fff;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            text-decoration: underline;
+                            text-align: center;
+                            line-height: 10vw;
+                            text-shadow: 2px 2px 2px #333;
+                            transform: rotateY(-180deg);
+                            }
+                        }// hover
+                    }// a
+                        &:nth-of-type(1)>a{background-image: url(../img/judy/judy_icon.png);
+                    }            
+                        &:nth-of-type(2)>a{background-image: url(../img/nick/nick_01.jpg);
+                    }      
+                        &:nth-of-type(3)>a{background-image: url(../img/finnick/finnick_icon.png);
+                    }            
+                        &:nth-of-type(4)>a{background-image: url(../img/index/zootopia_icon.png); 
+                    }
+                }// li
+            }// ul
+        }// #content_02
+        .content_03{
+            width: 34vw;/*300px*/ height: 39vw;/*400px*/
+            padding-top: 3vw;
+            padding-right: 5vw; float: right;
+            overflow: hidden;
+            #picture_04{
+             position: absolute; z-index: 300;
+             height: 100%; top: 0; right: 0;      
+            }
+            #picture_05{
+             position: absolute; z-index: 100;
+             height: 100%; top: 0; right: 15%;      
+            }
+        }
+    }// #box_04
+    #box_05{width: 100%; height: auto;/*550px*/
+        background-image: url("../img/index/gallery_pc.jpg"); 
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        box-sizing: border-box;
+        position: relative;
+        >.content_01{width: 70%;/*450px*/ height: auto;/*280px*/
+                    margin-top: 5vh; float: left;
+            h2{width: 100%;/*360px*/ height: 10vh;/*100px*/
+                >a{width: 100%; height: 100%; display: block;
+                >span{width: 100%; height: 100%; 
+                      display: block;
+                      font-weight: bold; font-size: 1.8rem; color: #fff;
+                      text-align: center; line-height: 10vh;
+                      text-shadow: 2px 2px 2px #333;}
+                }// a
+            }// h2 
+            >#gallery_box{width: 100%; height: auto;
+                          margin-top: 2vw;
+                          padding: 0 8vw; box-sizing: border-box;
+            }
+        }
+        >.content_02{display: none;}// #content_02
+        .gallery{
+            width: calc(30% - 4vw);/*360px*/ height: 90vh;/*360px*/
+            padding: 5vh 1vw 5vh 3vw; float: left;
+            overflow: hidden; box-sizing: border-box;
+            ul{width: 100%; height: 100%; overflow: hidden; 
+                li{width: calc(100% / 2); height: calc(100% / 6); float: left;
+                    a{width: 100%; height: 100%;
+                      display: block; 
+                      overflow: hidden; border: 5px solid #fff;
+                      box-sizing: border-box;
+                        &:hover>img{transform: scale(2,2);}
+                    }// a
+                    img{width: 100%; height: 100%; transition: all 0.5s ease;}
+                    
+                }
+            }
+        }
+    }// #box_05
+    #web_foot{width: 100%; height: 20.83vw;/*100px*/
+        background-color: rgba(#fff, 0.5);
+        padding: 2vw;
+        border-top: 7.8125vw/*30px*/ solid rgba(#333, 0.35);
+        h2{width: 20%; height: 8.333vw/*40px*/;
+           min-height: 20px; 
+           margin-top: 5.208vw/*25px*/;
+           margin-left: 4.166vw/*20px*/;
+           float: left;
+           background-image: url(../img/index/con_01/zootopia_logo.png);
+           background-position: left center;
+           background-repeat: no-repeat;
+           background-size: contain;
+        }// h2
+        #info_box{width: 39vw;/*400px*/ height: 3vw;/*60px*/ 
+            margin-right: 4vw;
+            padding-top: 5vw;
+            float: right; 
+            p{width: 100%; height: 4vw; color: #333;
+              font-size: 1rem;
+              line-height: 4vw;
+                strong{font-weight: bold; 
+                       font-size: 1.15rem;
+                       color: #333;
+                       line-height: 4vw;}
+            }
+        }
+    }// #web_foot
+}// pc.scss
