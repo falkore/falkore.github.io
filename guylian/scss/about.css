@@ -15,6 +15,167 @@ html, body {
     right: 20%;
     bottom: 5%; } }
 
+@media screen and (max-width: 480px) {
+  /* line 39, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+  #pop_up {
+    width: 100%;
+    height: 100vw;
+    position: fixed;
+    top: 20vw;
+    z-index: 1000;
+    padding: 3vw;
+    box-sizing: border-box;
+    padding-right: 4vw;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(85, 85, 85, 0.8);
+    cursor: pointer;
+    background-color: rgba(34, 34, 170, 0.9); }
+    /* line 47, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+    #pop_up > .content_pop {
+      width: 80%;
+      height: 100%;
+      float: left;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 2vw;
+      box-sizing: border-box; }
+      /* line 50, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+      #pop_up > .content_pop > p {
+        width: 100%;
+        height: 100%;
+        text-indent: 0.5em;
+        text-align: left;
+        color: #333;
+        font-size: 6vw;
+        font-weight: bold; }
+    /* line 54, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+    #pop_up > .close_btn {
+      width: 15vw;
+      height: 15vw;
+      margin-top: 40.5vw;
+      text-align: center;
+      float: right;
+      background-color: transparent;
+      cursor: pointer; }
+      /* line 58, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+      #pop_up > .close_btn > i {
+        font-size: 12vw;
+        padding: 3px;
+        color: #5ff; }
+        /* line 59, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+        #pop_up > .close_btn > i > span {
+          width: 0;
+          height: 0;
+          display: none;
+          overflow: hidden; } }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 65, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+  #pop_up {
+    width: 70vw;
+    height: 40vw;
+    position: fixed;
+    top: 15vw;
+    left: 50vw;
+    margin-left: -35vw;
+    z-index: 1000;
+    padding: 2vw;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(85, 85, 85, 0.8);
+    cursor: pointer;
+    background-color: rgba(34, 34, 170, 0.9); }
+    /* line 73, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+    #pop_up > .content_pop {
+      width: 85%;
+      height: 100%;
+      float: left;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 2vw;
+      box-sizing: border-box; }
+      /* line 76, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+      #pop_up > .content_pop > p {
+        width: 100%;
+        height: 100%;
+        text-indent: 1em;
+        text-align: left;
+        color: #333;
+        font-size: 3vw;
+        font-weight: bold; }
+    /* line 80, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+    #pop_up > .close_btn {
+      width: 8vw;
+      height: 8vw;
+      margin-top: 14vw;
+      text-align: center;
+      float: right;
+      background-color: transparent;
+      cursor: pointer; }
+      /* line 84, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+      #pop_up > .close_btn > i {
+        font-size: 5vw;
+        padding: 3px;
+        color: #5ff; }
+        /* line 85, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+        #pop_up > .close_btn > i > span {
+          width: 0;
+          height: 0;
+          display: none;
+          overflow: hidden; } }
+
+@media screen and (min-width: 769px) {
+  /* line 91, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+  #pop_up {
+    width: 70vw;
+    height: 20vw;
+    position: fixed;
+    top: 10vw;
+    left: 50vw;
+    margin-left: -35vw;
+    z-index: 1000;
+    padding: 2vw;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(85, 85, 85, 0.8);
+    cursor: pointer;
+    background-color: rgba(34, 34, 170, 0.9); }
+    /* line 99, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+    #pop_up > .content_pop {
+      width: 90%;
+      height: 100%;
+      float: left;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 2vw;
+      box-sizing: border-box; }
+      /* line 102, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+      #pop_up > .content_pop > p {
+        width: 100%;
+        height: 100%;
+        text-indent: 1em;
+        text-align: left;
+        color: #333;
+        font-size: 2vw;
+        font-weight: bold; }
+    /* line 106, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+    #pop_up > .close_btn {
+      width: 5vw;
+      height: 5vw;
+      margin-top: 5.5vw;
+      text-align: center;
+      float: right;
+      background-color: transparent;
+      cursor: pointer; }
+      /* line 110, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+      #pop_up > .close_btn > i {
+        font-size: 3.5vw;
+        padding: 3px;
+        color: #5ff; }
+        /* line 111, E:/test/portfolio/guylian/scss/basic/_basic.scss */
+        #pop_up > .close_btn > i > span {
+          width: 0;
+          height: 0;
+          display: none;
+          overflow: hidden; } }
+
 /*------------------mobile-------------------*/
 @media screen and (max-width: 480px) {
   /* line 5, E:/test/portfolio/guylian/scss/about/_mobile.scss */
@@ -1089,7 +1250,7 @@ html, body {
         width: 19vw;
         min-width: 250px;
         height: 115px;
-        padding: 15px 20px 0;
+        padding: 10px 20px 0;
         box-sizing: border-box;
         float: left; }
         /* line 48, E:/test/portfolio/guylian/scss/about/_pc.scss */
@@ -1516,14 +1677,14 @@ html, body {
           height: 4vw;
           float: left;
           color: #fff;
-          font-size: 1.5vw; }
+          font-size: 1.3vw; }
         /* line 270, E:/test/portfolio/guylian/scss/about/_pc.scss */
         #webFoot > #footBox > #adressBox p {
           width: 100%;
           height: 2vw;
           float: left;
           color: #fff;
-          font-size: 1.5vw; }
+          font-size: 1.3vw; }
       /* line 273, E:/test/portfolio/guylian/scss/about/_pc.scss */
       #webFoot > #footBox > #sns {
         width: 60%;
@@ -1584,7 +1745,7 @@ html, body {
                 width: 100%;
                 height: 100%;
                 display: block;
-                font-size: 1.7vw;
+                font-size: 1.6vw;
                 font-weight: bold;
                 text-indent: 3vw;
                 text-align: left;

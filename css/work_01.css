@@ -1,0 +1,202 @@
+header { transition: all 0.5s; }
+
+@media screen and (max-width: 480px) { #container { width: 100%; height: 100%; background-image: url(../img/sky/cloud.JPG); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover; }
+  #wrap { background-color: rgba(51, 51, 51, 0.7); }
+  #web_head { width: calc(100% - 16vw); height: 15vh; margin: 0 8vw; border-bottom: 0.3px solid #fff; box-sizing: border-box; }
+  #web_head h1 { width: 70%; height: 100%; padding-left: 10vw; box-sizing: border-box; float: left; }
+  #web_head h1 a { width: 100%; height: 100%; display: block; }
+  #web_head h1 a strong { width: 100%; height: 100%; display: block; box-sizing: border-box; line-height: 20vh; font-size: 1.8em; text-align: left; color: #fff; font-weight: bold; float: left; }
+  #web_head h1 a span { display: block; }
+  #web_head #nav { width: 100%; height: 0; float: left; position: relative; }
+  #web_head #nav > h3 { width: 15%; height: 15vh; box-sizing: border-box; font-size: 2.5em; transition: all 0.5s ease; position: absolute; z-index: 100; top: -15vh; right: 10vw; text-align: right; }
+  #web_head #nav > h3 > i { width: 100%; height: 100%; display: block; color: #fff; font-weight: bold; line-height: 19vh; }
+  #web_head #nav > h3 > span { display: none; }
+  #web_head #nav > h3.on { transform: rotate(45deg); }
+  #web_head #nav > h3.on > i { color: #FF7777; }
+  #web_head #nav ul { width: 100vw; height: 0; position: absolute; top: -30vw; left: -8vw; z-index: 5; background-color: rgba(51, 51, 51, 0.9); opacity: 0; transition: all 0.5s; }
+  #web_head #nav ul > li { width: 100%; height: 0; float: left; padding: 8vw 20vw 0; box-sizing: border-box; opacity: 0; }
+  #web_head #nav ul > li:first-of-type { margin-top: 20vw; }
+  #web_head #nav ul > li.on > a > span { color: #FF7777; text-shadow: 1px 2px 4px #444; }
+  #web_head #nav ul > li a { width: 100%; height: 100%; display: block; opacity: 0; border-bottom: 0.3px solid #fff; }
+  #web_head #nav ul > li a span { width: 100%; height: 100%; display: block; text-align: center; font-size: 5vw; color: #fff; font-weight: bold; opacity: 0; }
+  #web_head #nav ul > li a span:hover { color: #FF7777; text-shadow: 1px 2px 4px #444; }
+  #web_head #nav ul.pop { height: 100vh; opacity: 1; }
+  #web_head #nav ul.pop > li { opacity: 1; height: 12%; }
+  #web_head #nav ul.pop > li > a { opacity: 1; }
+  #web_head #nav ul.pop > li > a > span { opacity: 1; }
+  #content { width: 100%; height: auto; padding: 10vw 12vw; box-sizing: border-box; }
+  #content article { width: 100%; height: auto; background-image: url(../img/sky/cloud.JPG); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover; }
+  #content article > h5 { width: 100%; height: 18vh; background-color: rgba(51, 51, 51, 0.8); }
+  #content article > h5 > span.title { width: 100%; height: 10vh; display: block; font-size: 6vw; font-weight: bold; color: #fff; text-align: center; line-height: 10vh; text-shadow: 2px 4px 10px rgba(51, 51, 51, 0.6); float: left; }
+  #content article > h5 > span.plus { width: 100%; height: 8vh; display: block; color: #FF7777; font-size: 7vw; font-weight: bold; text-align: center; line-height: 8vh; text-shadow: 2px 4px 10px rgba(51, 51, 51, 0.5); float: left; }
+  #content article h5.plusOn > .plus { transform: rotate(45deg); color: #40aaef; z-index: 0; }
+  #content article h5:nth-of-type(1).plusOn { background-image: url(../img/guylian.png); background-repeat: no-repeat; background-position: center center; background-size: cover; }
+  #content article h5:nth-of-type(2).plusOn { background-image: url(../img/zootopia.png); background-repeat: no-repeat; background-position: center center; background-size: cover; }
+  #content article h5:nth-of-type(3).plusOn { background-image: url(../img/showbox.png); background-repeat: no-repeat; background-position: center -80px; background-size: cover; }
+  #content article > div { width: 100%; height: 30vw; background-color: rgba(255, 255, 255, 0.4); }
+  #content article > div > ul { width: 100%; height: 100%; padding: 5vw 0; box-sizing: border-box; }
+  #content article > div > ul > li { width: 50%; height: 100%; float: left; border-right: 0.1px solid #333; box-sizing: border-box; }
+  #content article > div > ul > li:last-of-type { border: 0; }
+  #content article > div > ul > li > a { width: 100%; height: 100%; display: block; }
+  #content article > div > ul > li > a > span { width: 100%; height: 10vw; display: block; }
+  #content article > div > ul > li > a > span:nth-child(1) { font-size: 4vw; font-weight: bold; color: #333; text-align: center; line-height: 10vw; }
+  #content article > div > ul > li > a > span:nth-child(2) { text-align: center; }
+  #content article > div > ul > li > a > span:nth-child(2) > i { width: 100%; height: 100%; display: block; font-size: 2em; line-height: 10vw; }
+  #web_foot { width: calc(100% - 16vw); height: 14vh; margin: 2vh 8vw 0; padding-top: 4vw; padding-left: 4vw; border-top: 0.3px solid #fff; box-sizing: border-box; }
+  #web_foot p { width: 100%; height: 50%; box-sizing: border-box; text-align: left; font-size: 0.9em; color: #fff; } }
+@media screen and (min-width: 481px) and (max-width: 768px) { #container { width: 100%; height: auto; background-image: url(../img/sky/blue_sky.JPG); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover; }
+  #wrap { background-color: rgba(51, 51, 51, 0.7); }
+  #web_head { width: calc(100% - 12vw); height: 20vw; margin: 0 6vw; padding-top: 2vw; box-sizing: border-box; }
+  #web_head h1 { width: 100%; height: 50%; padding-left: 4vw; padding-right: 40%; border-bottom: 0.3px solid #fff; box-sizing: border-box; float: left; }
+  #web_head h1 a { width: 100%; height: 100%; display: block; }
+  #web_head h1 a strong { width: 40%; height: 100%; display: block; box-sizing: border-box; line-height: 9vw; font-size: 1.6em; color: #fff; font-weight: bold; float: left; }
+  #web_head h1 a span { width: 60%; height: 100%; display: block; text-align: left; line-height: 9vw; font-size: 1.1em; color: #ddd; font-weight: bold; float: left; }
+  #web_head #nav { width: 100%; height: 50%; float: left; position: relative; }
+  #web_head #nav ul { width: auto; height: 100%; padding-top: 1vw; box-sizing: border-box; position: absolute; right: 4vw; }
+  #web_head #nav ul li { width: auto; height: 100%; float: left; margin-left: 2vw; }
+  #web_head #nav ul li.on > a > span { color: #FF9A9A; text-shadow: 1px 2px 4px #444; }
+  #web_head #nav ul li a { width: 100%; height: 100%; display: block; }
+  #web_head #nav ul li a span { width: 100%; height: 100%; display: block; line-height: 9vw; text-align: right; font-size: 1em; color: #fff; font-weight: bold; }
+  #web_head #nav ul li a span:hover { color: #FF9A9A; text-shadow: 1px 2px 4px #444; }
+  #content { width: 100%; height: auto; padding: 8vw 15vw; box-sizing: border-box; }
+  #content article { width: 100%; height: auto; background-image: url(../img/sky/cloud.JPG); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover; }
+  #content article > h5 { width: 100%; height: 20vw; background-color: rgba(51, 51, 51, 0.8); }
+  #content article > h5 > span.title { width: 100%; height: 10vw; display: block; font-size: 3vw; font-weight: bold; color: #fff; text-align: center; line-height: 10vw; text-shadow: 2px 4px 10px rgba(51, 51, 51, 0.9); float: left; }
+  #content article > h5 > span.plus { width: 100%; height: 10vw; display: block; color: #FF7777; font-size: 5vw; font-weight: bold; text-align: center; line-height: 10vw; text-shadow: 2px 4px 10px rgba(51, 51, 51, 0.5); float: left; }
+  #content article h5.plusOn > .plus { transform: rotate(45deg); color: #40aaef; z-index: 0; }
+  #content article h5:nth-of-type(1).plusOn { background-image: url(../img/guylian.png); background-repeat: no-repeat; background-position: center center; background-size: cover; }
+  #content article h5:nth-of-type(2).plusOn { background-image: url(../img/zootopia.png); background-repeat: no-repeat; background-position: center center; background-size: cover; }
+  #content article h5:nth-of-type(3).plusOn { background-image: url(../img/showbox.png); background-repeat: no-repeat; background-position: center -80px; background-size: cover; }
+  #content article > div { width: 100%; height: 25vw; background-color: rgba(255, 255, 255, 0.4); }
+  #content article > div > ul { width: 100%; height: 100%; padding: 2.5vw 0; box-sizing: border-box; }
+  #content article > div > ul > li { width: 50%; height: 100%; float: left; border-right: 0.1px solid #333; box-sizing: border-box; }
+  #content article > div > ul > li:last-of-type { border: 0; }
+  #content article > div > ul > li > a { width: 100%; height: 100%; display: block; }
+  #content article > div > ul > li > a > span { width: 100%; height: 10vw; display: block; }
+  #content article > div > ul > li > a > span:nth-of-type(1) { font-size: 3vw; font-weight: bold; color: #333; text-align: center; line-height: 10vw; }
+  #content article > div > ul > li > a > span:nth-of-type(2) { text-align: center; }
+  #content article > div > ul > li > a > span:nth-of-type(2) > i { width: 100%; height: 100%; display: block; font-size: 3em; line-height: 10vw; }
+  #web_foot { width: calc(100% - 12vw); height: 16vw; margin: 3vw 6vw 0; padding: 4vw; border-top: 0.3px solid #fff; box-sizing: border-box; }
+  #web_foot p { width: 100%; height: 50%; box-sizing: border-box; text-align: left; font-size: 0.9em; color: #fff; } }
+@media screen and (min-width: 769px) { #container { width: 100%; height: auto; background-image: url(../img/sky/sunset_.jpg); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover; }
+  #wrap { background-color: rgba(51, 51, 51, 0.7); }
+  #web_head { width: calc(100% - 12vw); height: 15vw; margin: 0 6vw; padding-top: 2vw; border-bottom: 0.3px solid #fff; box-sizing: border-box; }
+  #web_head h1 { width: 40%; height: 100%; padding-left: 4vw; box-sizing: border-box; float: left; }
+  #web_head h1 a { width: 100%; height: 100%; display: block; }
+  #web_head h1 a strong { width: 40%; height: 100%; display: block; box-sizing: border-box; line-height: 13vw; font-size: 3vw; color: #fff; font-weight: bold; float: left; }
+  #web_head h1 a span { width: 60%; height: 100%; display: block; text-align: left; line-height: 13vw; font-size: 2vw; color: #ddd; font-weight: bold; float: left; }
+  #web_head #nav { width: 60%; height: 100%; float: right; position: relative; }
+  #web_head #nav ul { width: auto; height: 100%; padding-top: 1vw; box-sizing: border-box; position: absolute; right: 4vw; }
+  #web_head #nav ul li { width: auto; height: 100%; float: left; margin-left: 3.5vw; }
+  #web_head #nav ul li.on > a > span { color: #FF9A9A; text-shadow: 1px 2px 4px #444; }
+  #web_head #nav ul li a { width: 100%; height: 100%; display: block; }
+  #web_head #nav ul li a span { width: 100%; height: 100%; display: block; line-height: 11vw; text-align: right; font-size: 1.8vw; color: #fff; font-weight: bold; }
+  #web_head #nav ul li a span:hover { color: #FF9A9A; text-shadow: 1px 2px 4px #444; }
+  #web_head #nav ul li a span.on { color: #FF9A9A; text-shadow: 1px 2px 4px #444; }
+  #content { width: 100%; height: auto; padding: 8vw 12vw; box-sizing: border-box; }
+  #content > article { width: 100%; height: 23vw;                            /*
+background-image: url(../img/sky/sunset_.JPG);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;*/ position: relative; }
+  #content > article > h5 { width: 100%; height: 23vw; background-color: rgba(51, 51, 51, 0.9); margin-bottom: 2vw; }
+  #content > article > h5 > span.title { width: 100%; height: 50%; display: block; font-size: 2vw; font-weight: bold; color: #fff; text-align: center; line-height: 12vw; text-shadow: 2px 4px 10px rgba(51, 51, 51, 0.7); float: left; }
+  #content > article > h5 > span.plus { width: 100%; height: 50%; display: block; color: #FF7777; font-size: 5vw; font-weight: bold; text-align: center; line-height: 11vw; text-shadow: 2px 4px 10px rgba(51, 51, 51, 0.5); float: left; }
+  #content > article h5.plusOn { width: 30%; }
+  #content > article h5.plusOn > .plus { transform: rotate(45deg); color: #40aaef; z-index: 0; }
+  #content > article h5:nth-of-type(1).plusOn { background-image: url(../img/guylian.png); background-repeat: no-repeat; background-position: center center; background-size: cover; }
+  #content > article > div { width: 0; height: 23vw; background-color: rgba(51, 51, 51, 0.8); margin-bottom: 2vw; position: absolute; right: 0; }
+  #content > article > div:nth-of-type(1) { top: 0; }
+  #content > article > div > ul { width: 100%; height: 100%; padding: 5vw 0; box-sizing: border-box; }
+  #content > article > div > ul > li { width: 50%; height: 100%; float: left; border: 0; box-sizing: border-box; }
+  #content > article > div > ul > li > a { width: 100%; height: 100%; display: block; }
+  #content > article > div > ul > li > a > span { width: 100%; height: 6.5vw; display: block; }
+  #content > article > div > ul > li > a > span:nth-of-type(1) { font-size: 2vw; font-weight: bold; color: #fff; text-align: center; line-height: 6.5vw; }
+  #content > article > div > ul > li > a > span:nth-of-type(2) { text-align: center; }
+  #content > article > div > ul > li > a > span:nth-of-type(2) > i { width: 100%; height: 100%; display: block; font-size: 4vw; color: #fff; line-height: 6.5vw; }
+  #content > article > div > ul > li a:hover > span { transition: all 0.5s; color: #40aaef; }
+  #content > article > div > ul > li a:hover > span > i { transition: all 0.5s; color: #40aaef; }
+  #content > article > div > ul li:nth-of-type(2) { border: 0; }
+  #content > article > div > ul li:nth-of-type(2) > a > span { color: #40aaef; }
+  #content > article > div > ul li:nth-of-type(2) > a > span > i { color: #40aaef; }
+  #content > article div.slide { width: 70%; }
+  #content > article div.slide > ul > li:first-of-type { border-right: 0.1px solid #fff; }
+  #process { width: calc(100% - 16vh); height: 500vh; position: relative; background-color: #fff; margin-left: 15vh; margin-right: 1vh; box-sizing: border-box; }
+  #process > #lnb { width: 11vh; height: 100vh; position: fixed; z-index: 500; top: 10vh; left: 0; background-color: transparent; }
+  #process > #lnb > .list { width: 7vh; height: 7vh; float: left; margin-left: 4vh; background-color: rgba(51, 51, 51, 0.3); box-sizing: border-box; transform: rotate(-45deg); opacity: 0.4; }
+  #process > #lnb > .list.list_01 { border: 1px solid rgba(255, 255, 255, 0.9); }
+  #process > #lnb > .list.list_02 { border: 1px solid rgba(148, 195, 255, 0.9); }
+  #process > #lnb > .list.list_03 { border: 1px solid rgba(44, 138, 255, 0.9); }
+  #process > #lnb > .list.list_04 { border: 1px solid rgba(0, 93, 225, 0.9); }
+  #process > #lnb > .list.list_05 { border: 1px solid rgba(44, 138, 255, 0.9); }
+  #process > #lnb > .list.list_06 { border: 1px solid rgba(0, 16, 111, 0.9); opacity: 1; }
+  #process > #lnb > .list > a { width: 100%; height: 100%; display: block; }
+  #process > #lnb > .list > a > span { width: 100%; height: 100%; display: block; color: #fff; text-align: center; line-height: 7vh; font-size: 1rem; transform: rotate(45deg); }
+  #process > #lnb > .line { width: 7vh; height: 4vh; margin: 2vh 0 2vh 4vh; float: left; background-image: url(../img/line.png); background-repeat: repeat-y; background-size: cover; }
+  #process > #lnb > .list.on { opacity: 1; }
+  #process > #lnb > .list:hover { opacity: 1; }
+  #process > .work { width: 100%; height: 100vh; padding: 2vh; border-bottom: 2vh solid #EAF2F4; box-sizing: border-box; position: absolute; z-index: 200; }
+  #process > .work > h5 { width: 25%; height: 12vh; margin-right: 75%; border-bottom: 6px solid #00106F; box-sizing: border-box; color: #222; font-weight: bold; font-size: 1.3rem; text-align: right; line-height: 15vh; }
+  #process > #work_01 { top: 0; }
+  #process > #work_01 > #box_01 { width: 50%; height: 79vh; margin-top: 5vh; padding: 2vh; box-sizing: border-box; float: left; }
+  #process > #work_01 > #box_01 > p { width: 100%; height: 70%; display: block; float: left; float: left; background-image: url(../img/work/guylian/pc_mockup_guylian.png); background-size: contain; background-repeat: no-repeat; background-position: center center; }
+  #process > #work_01 > #box_01 > p > span { width: 0; height: 0; display: none; overflow: hidden; }
+  #process > #work_01 > #box_01 > dl { width: 100%; height: calc(30% - 5vh); margin-top: 5vh; float: left; }
+  #process > #work_01 > #box_01 > dl > dt { width: 20%; height: 60%; border-top: 6px solid #aaa; box-sizing: border-box; color: #222; font-weight: bold; font-size: 1.1rem; text-align: left; line-height: 10vh; }
+  #process > #work_01 > #box_01 > dl > dd { width: 100%; height: 40%; color: #222; font-size: 0.9rem; }
+  #process > #work_01 > ul { width: 50%; height: 85vh; float: left; }
+  #process > #work_01 > ul > li { width: 100%; height: 24%; padding: 0 2vh; box-sizing: border-box; }
+  #process > #work_01 > ul > li > h6 { width: 20%; height: 40%; border-top: 6px solid #aaa; box-sizing: border-box; color: #222; font-weight: bold; font-size: 1.1rem; text-align: left; line-height: 7vh; }
+  #process > #work_01 > ul > li > p { width: 100%; height: 60%; color: #222; font-size: 1rem; }
+  #process > #work_01 > ul > li:nth-child(3) { height: 28%; }
+  #process > #work_01 > ul > li:nth-child(3) > img { height: 45%; display: block; }
+  #process > #work_02 { top: 100vh; }
+  #process > #work_02 > #box_02 { width: 40%; height: 76vh; margin-top: 8vh; float: left; }
+  #process > #work_02 > #box_02 > p { width: 70%; height: 33vh; display: block; box-shadow: 2px 6px 10px rgba(68, 68, 68, 0.5); background-size: cover; background-repeat: no-repeat; background-position: center center; }
+  #process > #work_02 > #box_02 > p:first-child { margin-left: 6vh; background-image: url(../img/work/guylian/guylian_layout.jpg); }
+  #process > #work_02 > #box_02 > p:last-child { margin-left: 3vh; margin: 5vh 0; background-image: url(../img/work/guylian/guylian_sketch01.jpg); }
+  #process > #work_02 > #box_02 > p > span { width: 0; height: 0; display: none; overflow: hidden; }
+  #process > #work_02 > p { width: calc(60% - 2vh); height: 65vh; display: block; margin-top: 8vh; margin-right: 2vh; float: left; background-image: url(../img/work/guylian/mockup_guylian.png); background-size: contain; background-repeat: no-repeat; background-position: center center; }
+  #process > #work_02 > p > span { width: 0; height: 0; display: none; overflow: hidden; }
+  #process > #work_03 { top: 200vh; }
+  #process > #work_03 > p { width: 30%; height: 74vh; font-size: 1.1rem; float: left; margin-top: 10vh; margin-left: 5%; }
+  #process > #work_03 > ul { width: 65%; height: 84vh; float: right; }
+  #process > #work_03 > ul > li { width: 47.5%; height: 95%; float: left; box-shadow: 2px 6px 10px rgba(68, 68, 68, 0.5); background-size: cover; background-repeat: no-repeat; background-position: center center; }
+  #process > #work_03 > ul > li:nth-child(1) { margin-right: 3%; background-image: url(../img/work/guylian/pc_guylian_main.png); }
+  #process > #work_03 > ul > li:nth-child(2) { margin-right: 2%; background-image: url(../img/work/guylian/guylian_discover.png); }
+  #process > #work_03 > ul > li > span { width: 0; height: 0; display: none; overflow: hidden; }
+  #process > #work_04 { top: 300vh; }
+  #process > #work_04 > p { width: 30%; height: 74vh; font-size: 1.1rem; float: left; margin-top: 10vh; margin-left: 5%; }
+  #process > #work_04 > ul { width: 65%; height: 84vh; float: right; }
+  #process > #work_04 > ul > li { height: 95%; float: left; box-shadow: 2px 6px 10px rgba(68, 68, 68, 0.5); background-size: cover; background-repeat: no-repeat; background-position: top center; }
+  #process > #work_04 > ul > li:nth-child(1) { width: 55%; margin-right: 4%; background-image: url(../img/work/guylian/guylian_tablet.png); }
+  #process > #work_04 > ul > li:nth-child(2) { width: 39%; margin-right: 2%; background-image: url(../img/work/guylian/guylian_mob_index.png); }
+  #process > #work_04 > ul > li > span { width: 0; height: 0; display: none; overflow: hidden; }
+  #process > #work_05 { top: 400vh; }
+  #process > #work_05 > p { width: 50%; height: 10vh; font-size: 1.1rem; float: left; margin-top: 10vh; margin-left: 5%; }
+  #process > #work_05 > #box_05 { width: 60%; height: 44vh; font-size: 1.1rem; float: left; margin: 5vh 5vh 15vh; background-size: contain; background-repeat: no-repeat; background-position: center center; background-image: url(../img/work/guylian/code.png); }
+  #process > #work_05 > .small_img { width: 30%; height: 84vh; position: absolute; top: 12vh; right: 0; }
+  #process > #work_05 > .small_img > li { width: 90%; height: 28%; float: left; margin: 3.2% 5%; box-shadow: 2px 6px 10px rgba(68, 68, 68, 0.5); background-size: cover; background-repeat: no-repeat; background-position: center center; }
+  #process > #work_05 > .small_img > li:nth-child(1) { background-image: url(../img/work/guylian/html_banner.png); }
+  #process > #work_05 > .small_img > li:nth-child(2) { background-image: url(../img/work/guylian/css_banner.png); }
+  #process > #work_05 > .small_img > li:nth-child(3) { background-image: url(../img/work/guylian/js_banner.png); }
+  #process > #work_05 > .small_img > li > span { width: 0; height: 0; display: none; overflow: hidden; }
+  #process > #work_05 > .big { width: 50vw; height: 30vw; position: absolute; top: 20vh; left: 50%; margin-left: -25vw; overflow: hidden; }
+  #process > #work_05 > .big > .big_img { width: 300%; height: 100%; }
+  #process > #work_05 > .big > .big_img > li { width: 100%; height: 100%; float: left; background-size: cover; background-repeat: no-repeat; background-position: center center; transition: all 0.5s; position: absolute; opacity: 0; }
+  #process > #work_05 > .big > .big_img > li:nth-child(1) { left: 0; background-image: url(../img/work/guylian/html_banner.png); }
+  #process > #work_05 > .big > .big_img > li:nth-child(2) { left: 100%; background-image: url(../img/work/guylian/css_banner.png); }
+  #process > #work_05 > .big > .big_img > li:nth-child(3) { left: 200%; background-image: url(../img/work/guylian/js_banner.png); }
+  #process > #work_05 > .big > .big_img > li > span { width: 0; height: 0; display: none; overflow: hidden; }
+  #process > #work_05 > .big > .big_img > li.on { left: 0; opacity: 1; z-index: 1000; }
+  #process .back_01 { width: 70%; height: 100%; margin-left: 30%; background-color: #EAF2F4; position: absolute; z-index: 50; top: 0; }
+  #process .back_02 { width: 70%; height: 2vh; background-color: #fff; position: absolute; z-index: 300; top: 98vh; left: 30%; }
+  #web_foot { width: calc(100% - 12vw); height: 16vw; margin: 0 6vw; padding: 4vw; box-sizing: border-box; }
+  #web_foot p { width: 100%; height: 50%; box-sizing: border-box; text-align: left; font-size: 1.8vw; color: #fff; } }
+#portfolio > div { animation: scale 1s 1; }
+
+@keyframes scale { 0% { transform: scale(0); }
+  100% { transform: scale(1); } }
+
+/*# sourceMappingURL=work_01.css.map */

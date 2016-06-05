@@ -1411,7 +1411,7 @@ html {
     box-sizing: border-box; }
     #box_01 #content_wrap {
       width: calc(48% - 3vw);
-      height: 55vw;
+      height: 40vw;
       /*530px*/
       float: left;
       padding-top: 6vw;
@@ -1419,7 +1419,7 @@ html {
     #box_01 .content_01 {
       width: 43.94vw;
       /*450px*/
-      height: 36vw;
+      height: 32vw;
       /*280px*/ }
       #box_01 .content_01 h2 {
         width: 100%;
@@ -1443,7 +1443,7 @@ html {
       #box_01 .content_01 #article_01 {
         width: 90.476%;
         /*380px*/
-        height: 18vw;
+        height: 16vw;
         /*220px*/
         background-color: rgba(51, 51, 51, 0.4);
         margin: 2vw 0;
@@ -1463,19 +1463,22 @@ html {
       width: 50vw;
       /*430px*/
       height: 13vw;
-      /*140px*/ }
+      /*140px*/
+      padding: 2vw 1vw;
+      box-sizing: border-box; }
       #box_01 .content_02 ul {
         width: 100%;
         /*430px*/
-        height: 9.76vw;
+        height: 9vw;
         /*100px*/
-        padding: 0.976vw 1vw;
         transition: all 0.5s ease; }
         #box_01 .content_02 ul li {
-          width: 9.76vw;
+          width: 9vw;
           /*100px*/
           height: 100%;
           float: left;
+          margin-top: 1vw;
+          /*7px*/
           margin-right: 1vw;
           /*7px*/ }
           #box_01 .content_02 ul li:last-of-type {
@@ -1532,10 +1535,16 @@ html {
           top: 29.296vw;
                                                    /*3
 00px*/
-          font-size: 1.25em;
+          font-size: 3vw;
           background-color: transparent; }
+          #box_01 .content_03 #picture_01 button:hover {
+            transition: all 0.5s;
+            transform: scale(1.2); }
+            #box_01 .content_03 #picture_01 button:hover > i {
+              color: #22a; }
           #box_01 .content_03 #picture_01 button > i {
-            color: #788; }
+            color: #91DB60;
+            text-shadow: 2px 2px 2px #333; }
           #box_01 .content_03 #picture_01 button > span {
             width: 0;
             height: 0;

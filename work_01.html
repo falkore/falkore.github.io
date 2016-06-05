@@ -8,14 +8,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="./img/favi_h.png" />
     <link rel="stylesheet" href="./css/library/reset.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" href="./css/portfolio.css" />
+    <link rel="stylesheet" href="./css/work_01.css" />
     <script src="./js/jquery/jquery-1.12.2.min.js"></script>
     <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
     <script src="./js/jquery/jquery-ui.min.js"></script>
-    <script src="./js/js/jquery/prefixfree.min.js"></script>
+    <script src="./js/jquery/prefixfree.min.js"></script>
     <script src="https://use.fontawesome.com/daf4cd64c9.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/work_01.js"></script>
+    <script src="./js/work.js"></script>
     <!--[if lte IE 6]>
         <script src="./js/dist/html5shiv.min.js"></script>
         <script src="./js/dist/ie9.min.js"></script>
@@ -72,7 +72,7 @@
                   <span class="title">PORTFOLIO 1</span>
                   <span class="fa fa-plus-circle plus" aria-hidden="true"></span>  
               </h5> 
-              <div>
+              <div class="slide">
                   <ul>
                       <li>
                           <a href="./guylian/index.html" target="_blank">
@@ -81,7 +81,7 @@
                           </a>
                       </li>
                       <li>
-                          <a href="#">
+                          <a href="#work_01">
                             <span>WORK PROCESS</span>
                             <span><i class="material-icons">work</i></span>
                           </a>
@@ -91,30 +91,97 @@
             </article><!--// #portfolio-->
         </section><!--// #content-->
         <section id="process">
-            <h4>Guylian work process</h4>
-            <ul>
-                <li><a href="#work_01"><span>1</span></a></li>
-                <li><a href="#work_02"><span>2</span></a></li>
-                <li><a href="#work_03"><span>3</span></a></li>
-                <li><a href="#work_04"><span>4</span></a></li>
-                <li><a href="#work_05"><span>5</span></a></li>
-            </ul>
-            <div id="work_01">
-                <img src="#" alt="#" />
-            </div><!--// #work_01-->
-            <div id="work_02">
-                <img src="#" alt="#" />
-            </div><!--// #work_02-->
-            <div id="work_03">
-                <img src="#" alt="#" />
-            </div><!--// #work_03-->
-            <div id="work_04">
-                <img src="#" alt="#" />
-            </div><!--// #work_04-->
-            <div id="work_05">
-                <img src="#" alt="#" />
-            </div><!--// #work_05-->
+            <h4>Guylian work process</h4> 
+            <div class="back_01"></div>
+            <ul id="lnb">
+                <li class="list list_01 on"><a href="#work_01"><span>1</span></a></li>
+                <li class="line"></li>
+                <li class="list list_02"><a href="#work_02"><span>2</span></a></li>
+                <li class="line"></li>
+                <li class="list list_03"><a href="#work_03"><span>3</span></a></li>
+                <li class="line"></li>
+                <li class="list list_04"><a href="#work_04"><span>4</span></a></li>
+                <li class="line"></li>
+                <li class="list list_05"><a href="#work_05"><span>5</span></a></li>
+                <li class="line"></li>
+                <li class="list list_06"><a href="#web_head"><span>TOP</span></a></li>
+            </ul><!--// #lnb-->
+            <article id="work_01" class="work">
+                <h5>1. CONCEPT</h5>
+                <div id="box_01">
+                    <p><span>Mockup Image</span></p>
+                    <dl>
+                        <dt>Participation</dt>
+                        <dd>디자인 100%, 코딩 100% (개인 작업)</dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li>
+                        <h6>Purpose</h6>
+                        <p>Guylian Chocolate 이 가지고 있는 이미지를 산뜻하게 표현. 가독성을 높이고 반응형 웹사이트 제작.</p>
+                    </li>
+                    <li>
+                        <h6>Target</h6>
+                        <p>Guylian 에 관심있는 전 연령층</p>
+                    </li>
+                    <li>
+                        <h6>Color</h6>
+                        <img src="./img/work/guylian/color_guylian.png" alt="Guylian's concept color" />
+                    </li>
+                    <li>
+                        <h6>Font</h6>
+                        <p>Myriad pro, Arial</p>
+                    </li>
+                </ul>
+                <div class="back_02"></div>
+            </article><!--// #work_01-->
+            <article id="work_02" class="work">
+                <h5>2. SKETCH + MOCK UP</h5>
+                <div id="box_02">
+                    <p><span>Sketch Image_01</span></p>
+                    <p><span>Sketch Image_02</span></p>
+                </div>
+                <p><span>Mockup Image</span></p>
+                <div class="back_02"></div>
+            </article><!--// #work_02-->
+            <article id="work_03" class="work">
+                <h5>3. DESIGN</h5>
+                <p>-- PC ver.</p>
+                <ul>
+                    <li><span>design Image_01</span></li>
+                    <li><span>design Image_02</span></li>
+                </ul>
+                <div class="back_02"></div>
+            </article><!--// #work_03-->
+            <article id="work_04" class="work">
+                <h5>4. DESIGN</h5>
+                <p>-- TABLET + MOBILE ver.</p>
+                <ul>
+                    <li><span>design Image_01</span></li>
+                    <li><span>design Image_02</span></li>
+                </ul>
+                <div class="back_02"></div>
+            </article><!--// #work_04-->
+            <article id="work_05" class="work">
+                <h5>5. CODE</h5>
+                <p>-- Slide Banner</p>
+                <div id="box_05"></div>
+                <ul class="small_img">
+                    <li><span>code Image_01</span></li>
+                    <li><span>code Image_02</span></li>
+                    <li><span>code Image_03</span></li>
+                </ul>
+                <div class="big">
+                    <ul class="big_img">
+                        <li><span>code Image_01</span></li>
+                        <li><span>code Image_02</span></li>
+                        <li><span>code Image_03</span></li>
+                    </ul>
+                </div>
+                <div class="back_02"></div>
+            </article><!--// #work_05-->
         </section>
+
         <footer id="web_foot">
           <h2>Website's information</h2>
           <p>Copyright 2016 Haejeung Lee. All Rights Reserved.</p>    
